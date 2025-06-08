@@ -1,28 +1,12 @@
 # api.py – Point d’entrée FastAPI ultra avancé pour l’API Threed (Python)
 from fastapi import APIRouter, HTTPException, Request
-from backend.components.metiers.threed.api.core.controllers.threed_controller import ThreedController
-from backend.components.metiers.threed.api.core.middlewares.middlewares import rgpd_middleware, accessibility_middleware, audit_request
-from backend.components.metiers.threed.api.core.rgpd.rgpd import rgpd_sanitize
-from backend.components.metiers.threed.api.core.accessibility.accessibility import check_accessibility
-from backend.components.metiers.threed.api.core.audit.audit import audit_entity
-from backend.components.metiers.threed.api.core.hooks.hooks import before_action, after_action
+from backend.components.metiers.threed.api.controllers.threed_controller import ThreedController
+from backend.components.metiers.threed.api.rgpd.rgpd import rgpd_sanitize
+from backend.components.metiers.threed.api.accessibility.accessibility import check_accessibility
+from backend.components.metiers.threed.api.audit.audit import audit_entity
+from backend.components.metiers.threed.api.hooks.hooks import before_action, after_action
 
 router = APIRouter()
-
-@router.middleware('http')
-async def rgpd_middleware_wrapper(request: Request, call_next):
-    response = await rgpd_middleware(request, call_next)
-    return response
-
-@router.middleware('http')
-async def accessibility_middleware_wrapper(request: Request, call_next):
-    response = await accessibility_middleware(request, call_next)
-    return response
-
-@router.middleware('http')
-async def audit_request_wrapper(request: Request, call_next):
-    response = await audit_request(request, call_next)
-    return response
 
 @router.get('/threed/{id}')
 async def get_threed(id: str):

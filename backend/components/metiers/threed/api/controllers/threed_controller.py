@@ -49,3 +49,21 @@ def delete_threed(id: int):
     audit_entity({'id': id}, 'delete')
     after_action('delete', {'id': id})
     return deleted
+
+# Es gibt keine Klasse ThreedController, sondern nur Funktions-Exporte.
+# Die API erwartet aber eine Klasse für den Import in core/api.py.
+# Wir ergänzen eine Dummy-Klasse, die die Funktionssignaturen als statische Methoden bereitstellt.
+
+class ThreedController:
+    @staticmethod
+    def get_by_id(id):
+        return get_threed(id)
+    @staticmethod
+    def create(data):
+        return create_threed(data)
+    @staticmethod
+    def update(id, data):
+        return update_threed(id, data)
+    @staticmethod
+    def delete(id):
+        return delete_threed(id)

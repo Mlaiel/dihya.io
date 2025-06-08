@@ -1,0 +1,325 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.4.0, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /workspaces/dihya.io
+configfile: pytest.ini
+plugins: anyio-4.9.0, mock-3.14.1, asyncio-1.0.0, cov-6.1.1
+asyncio: mode=strict, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 154 items / 11 errors
+
+==================================== ERRORS ====================================
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/helpers/accessibility/helpers_accessibility.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/helpers/accessibility/helpers_accessibility.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:549: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:687: in _import_module_using_spec
+    parent_module = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:687: in _import_module_using_spec
+    parent_module = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/__init__.py:16: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/samples/__init__.py:16: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/samples/test_usage_samples.py:6: in <module>
+    from backend.components.metiers.threed.guides.helpers.samples.usage_samples import exemple_usage_samples as get_usage_sample
+backend/components/metiers/threed/guides/__init__.py:8: in <module>
+    from helpers.helpers_services import validate_service_config
+E   ModuleNotFoundError: No module named 'helpers'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/helpers/plugins/helpers_plugins.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/helpers/plugins/helpers_plugins.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:549: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:687: in _import_module_using_spec
+    parent_module = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:687: in _import_module_using_spec
+    parent_module = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/__init__.py:16: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/samples/__init__.py:16: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/samples/test_usage_samples.py:6: in <module>
+    from backend.components.metiers.threed.guides.helpers.samples.usage_samples import exemple_usage_samples as get_usage_sample
+backend/components/metiers/threed/guides/__init__.py:8: in <module>
+    from helpers.helpers_services import validate_service_config
+E   ModuleNotFoundError: No module named 'helpers'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/helpers/services/helpers_services.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/helpers/services/helpers_services.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:549: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:687: in _import_module_using_spec
+    parent_module = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:687: in _import_module_using_spec
+    parent_module = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/__init__.py:16: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/samples/__init__.py:16: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/guides/helpers/samples/test_usage_samples.py:6: in <module>
+    from backend.components.metiers.threed.guides.helpers.samples.usage_samples import exemple_usage_samples as get_usage_sample
+backend/components/metiers/threed/guides/__init__.py:8: in <module>
+    from helpers.helpers_services import validate_service_config
+E   ModuleNotFoundError: No module named 'helpers'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/fixtures/rbac_fixtures.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/fixtures/rbac_fixtures.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/fixtures/rbac_fixtures.test.py:1: in <module>
+    from .rbac_fixtures import rbac_fixtures
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.fixtures.rbac_fixtures'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/mocks/rbac_mocks.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/mocks/rbac_mocks.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/mocks/rbac_mocks.test.py:1: in <module>
+    from .rbac_mocks import rbac_mocks
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.mocks.rbac_mocks'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/sample_advanced.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/sample_advanced.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/sample_advanced.test.py:1: in <module>
+    from .sample_advanced import sample_advanced
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.samples.examples.sample_advanced'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/ultra_advanced_example.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/ultra_advanced_example.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/ultra_advanced_example.test.py:2: in <module>
+    from ..templates import render_rbac
+E   ImportError: cannot import name 'render_rbac' from 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.samples.templates' (unknown location)
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/fixtures_advanced.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/fixtures_advanced.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/fixtures_advanced.test.py:1: in <module>
+    from .fixtures_advanced import fixtures_advanced
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.samples.fixtures.fixtures_advanced'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/ultra_advanced_fixture.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/ultra_advanced_fixture.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/ultra_advanced_fixture.test.py:2: in <module>
+    from .rbac_fixtures import rbac_fixtures
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.samples.fixtures.rbac_fixtures'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/mocks/ultra_advanced_mock.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/mocks/ultra_advanced_mock.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/mocks/ultra_advanced_mock.test.py:2: in <module>
+    from .rbac_mocks import rbac_mocks
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.samples.mocks.rbac_mocks'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/samples/ultra_advanced_sample.test.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/samples/ultra_advanced_sample.test.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/python.py:497: in importtestmodule
+    mod = import_path(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:561: in import_path
+    mod = _import_module_using_spec(
+/home/vscode/.local/lib/python3.10/site-packages/_pytest/pathlib.py:725: in _import_module_using_spec
+    spec.loader.exec_module(mod)  # type: ignore[union-attr]
+<frozen importlib._bootstrap_external>:883: in exec_module
+    ???
+<frozen importlib._bootstrap>:241: in _call_with_frames_removed
+    ???
+backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/samples/ultra_advanced_sample.test.py:2: in <module>
+    from .sample_advanced import sample_advanced
+E   ModuleNotFoundError: No module named 'backend.components.metiers.threed.tests_centralises.utils.rbac.samples.samples.samples.sample_advanced'
+=========================== short test summary info ============================
+ERROR backend/components/metiers/threed/tests_centralises/guides/helpers/accessibility/helpers_accessibility.test.py
+ERROR backend/components/metiers/threed/tests_centralises/guides/helpers/plugins/helpers_plugins.test.py
+ERROR backend/components/metiers/threed/tests_centralises/guides/helpers/services/helpers_services.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/fixtures/rbac_fixtures.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/mocks/rbac_mocks.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/sample_advanced.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/examples/ultra_advanced_example.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/fixtures_advanced.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/fixtures/ultra_advanced_fixture.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/mocks/ultra_advanced_mock.test.py
+ERROR backend/components/metiers/threed/tests_centralises/utils/rbac/samples/samples/samples/ultra_advanced_sample.test.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 11 errors during collection !!!!!!!!!!!!!!!!!!!
+======================== 1 warning, 11 errors in 1.30s =========================

@@ -1,19 +1,19 @@
-# Dihya Coding – Threed Module (Ultra avancé)
+# threed – Module ultra avancé (clé en main)
 
 ---
 
 ## 🇫🇷 Présentation
-Ce module gère toutes les fonctionnalités métier liées à la 3D : API REST/GraphQL, sécurité, RGPD, audit, plugins, AI, multilingue, accessibilité, multitenancy, CI/CD, extension dynamique, tests, documentation intégrée.
+Ce module gère toutes les fonctionnalités métier liées à la 3D : API, sécurité, RGPD, audit, plugins, AI, multilingue, accessibilité, multitenancy, CI/CD, extension dynamique, tests, documentation intégrée.
 
 ## 🇬🇧 Overview
-This module manages all 3D business features: REST/GraphQL API, security, GDPR, audit, plugins, AI, multilingual, accessibility, multitenancy, CI/CD, dynamic extension, tests, integrated documentation.
+This module manages all 3D business features: API, security, GDPR, audit, plugins, AI, multilingual, accessibility, multitenancy, CI/CD, dynamic extension, tests, integrated documentation.
 
 ---
 
 ## 📚 Table des matières / Table of Contents
 - [Fonctionnalités principales / Main features](#fonctionnalités-principales--main-features)
 - [Structure du module / Module structure](#structure-du-module--module-structure)
-- [Points d’entrée globaux / Entrypoints](#points-dentrée-globaux--entrypoints)
+- [Points d’entrée globaux / Entrypoints](#points-dentree-globaux--entrypoints)
 - [Tests & CI/CD](#tests--cicd)
 - [Sécurité & RGPD / Security & GDPR](#sécurité--rgpd--security--gdpr)
 - [Internationalisation / Internationalization](#internationalisation--internationalization)
@@ -40,22 +40,24 @@ This module manages all 3D business features: REST/GraphQL API, security, GDPR, 
 
 ## Structure du module / Module structure
 
-- `index.js` : Point d’entrée global JS (exporte api, services, templates, views)
-- `init.js` : Point d’entrée JS alternatif (ESM, exporte api, services, templates, views)
-- `__init__.js` : Point d’entrée Node.js (CommonJS, exporte API et contrôleur)
-- `__init__.py` : Point d’entrée global Python (importe api, services, templates, views)
-- `index.py` : Point d’entrée Python (optionnel, import global)
-- `init.py` : Point d’entrée Python (optionnel, import global)
-- `index.test.py`, `init.test.py`, `init.test.js` : Tests d’intégration des points d’entrée
-- `api/` : API ultra avancée (Express/JS, FastAPI/Python, synchronisation, tests, RGPD, accessibilité, audit, hooks)
-- `services/` : Services métier, helpers, core, fallback, tests, documentation
-- `templates/` : Templates Jinja2, helpers, statiques, tests, documentation
-- `views/` : Vues métier, helpers, core, tests, documentation, samples structurés par domaine (`views/samples/admin/`, `views/samples/api/`, etc.)
+- `index.js` : point d’entrée unique, auto-discovery, exports dynamiques JS ultra avancé
+- `reports/` : centralisation professionnelle de tous les rapports de tests, lint, audit, CI/CD, etc. (voir `reports/README_ULTRA.md`)
+- `scripts/` : scripts d’automatisation, tests, maintenance
+- Sous-dossiers : chaque sous-module (api, plugins, views, utils, etc.) est centralisé et extensible
+
+Respecte la logique métier, la structure modulaire et le cahier des charges Dihya.
+Synchronisation JS/Python, documentation automatique, auditabilité CI/CD, extension facile, documentation à chaque niveau.
+
+---
+
+## Documentation avancée
+- Voir `README_ULTRA.md` pour la documentation ultra avancée et la logique clé en main.
+- Voir `reports/README_ULTRA.md` pour la gestion professionnelle des rapports.
 
 ---
 
 ## Points d’entrée globaux / Entrypoints
-- `index.js`, `init.js`, `__init__.js`, `__init__.py`, `index.py`, `init.py` : permettent l’import global du module Threed dans tous les environnements (Node.js, ESM, Python)
+- `index.js` : permet l’import global du module Threed dans tous les environnements (Node.js, ESM, Python)
 - Tests d’intégration associés pour chaque point d’entrée (clé en main, ultra avancé)
 
 ---
@@ -104,3 +106,17 @@ This module manages all 3D business features: REST/GraphQL API, security, GDPR, 
 - [CHANGELOG.md](../../../../CHANGELOG.md)
 
 > Pour toute extension, suivre la logique modulaire, testée, documentée et conforme au cahier des charges Dihya.
+
+---
+
+## Dossier `samples/`
+
+Exemples ultra avancés, structurés par thématique (access, audit, compliance, helpers, monitoring, policy, rbac, rgpd, scripts, validators). Prêt à l’industrialisation, chaque sous-dossier contient des exemples Node.js et Python, des points d’entrée, un README, un fichier `.keep` et une documentation dédiée.
+
+---
+
+## Remarques
+
+- Chaque fonctionnalité est documentée avec des exemples, des cas d’utilisation, des notes de version, des informations de déploiement et des liens vers des ressources supplémentaires.
+- La documentation est générée automatiquement à partir des commentaires dans le code, des fichiers de configuration et des métadonnées des commits.
+- Pour contribuer, veuillez suivre les directives dans `CONTRIBUTING.md` et respecter le style de code défini dans `CODE_STYLE.md`.
