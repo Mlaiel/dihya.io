@@ -1,0 +1,912 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-8.4.0, pluggy-1.6.0
+rootdir: /workspaces/dihya.io
+configfile: pyproject.toml
+plugins: anyio-4.9.0, mock-3.14.1, asyncio-1.0.0, cov-6.1.1
+asyncio: mode=strict, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 22 items / 50 errors
+
+==================================== ERRORS ====================================
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/accessibility/test_accessibility.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/accessibility/test_accessibility.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/audit/test_audit.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/audit/test_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/controllers/test_threed_controller.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/controllers/test_threed_controller.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/core/test_api.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/core/test_api.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/db/test_db.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/db/test_db.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/hooks/test_hooks.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/hooks/test_hooks.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/middlewares/test_middlewares.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/middlewares/test_middlewares.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/rgpd/test_rgpd.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/rgpd/test_rgpd.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/accessibility/test_sample_accessibility.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/accessibility/test_sample_accessibility.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/audit/test_sample_audit.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/audit/test_sample_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/controllers/test_sample_controllers.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/controllers/test_sample_controllers.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/core/test_sample_core.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/core/test_sample_core.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/db/test_sample_db.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/db/test_sample_db.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/hooks/test_sample_hooks.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/hooks/test_sample_hooks.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/middlewares/test_sample_middlewares.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/middlewares/test_sample_middlewares.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/rgpd/test_sample_rgpd.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/rgpd/test_sample_rgpd.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/samples/validators/test_sample_validators.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/samples/validators/test_sample_validators.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/api/validators/test_validators.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/api/validators/test_validators.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/fixtures/samples/test_samples.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/fixtures/samples/test_samples.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/accessibility/test_guide_accessibilite.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/accessibility/test_guide_accessibilite.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/audit/test_guide_audit.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/audit/test_guide_audit.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/best_practices/test_guide_bonnes_pratiques.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/best_practices/test_guide_bonnes_pratiques.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/functional/test_guide_fonctionnel.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/functional/test_guide_fonctionnel.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/integration/test_guide_integration.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/integration/test_guide_integration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/rgpd/test_guide_rgpd.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/rgpd/test_guide_rgpd.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/samples/test_guide_sample.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/samples/test_guide_sample.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/security/test_guide_securite.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/security/test_guide_securite.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/guides/technical/test_guide_technique.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/guides/technical/test_guide_technique.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/integration/api/test_api_integration.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/integration/api/test_api_integration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/integration/external_connectors/test_external_connectors_integration.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/integration/external_connectors/test_external_connectors_integration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/integration/monitoring/test_monitoring_integration.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/integration/monitoring/test_monitoring_integration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/integration/pipelines/test_integration_pipelines.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/integration/pipelines/test_integration_pipelines.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/integration/plugins/test_plugins_integration.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/integration/plugins/test_plugins_integration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/integration/samples/test_sample_integration.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/integration/samples/test_sample_integration.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/guides/exemples/test_guide_exemple.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/guides/exemples/test_guide_exemple.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/guides/technique/bonnes_pratiques/test_audit_bonnes_pratiques.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/guides/technique/bonnes_pratiques/test_audit_bonnes_pratiques.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/guides/technique/checklists/test_audit_checklist_professionnelle.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/guides/technique/checklists/test_audit_checklist_professionnelle.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/guides/technique/guides/test_audit_guide.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/guides/technique/guides/test_audit_guide.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/models/test_models.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/models/test_models.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/scripts/analyse/test_analyse_data.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/scripts/analyse/test_analyse_data.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/scripts/export/test_export_data.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/scripts/export/test_export_data.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/scripts/report/test_report_generator.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/scripts/report/test_report_generator.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/audit/services/test_api_service.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/audit/services/test_api_service.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/checklists/test_checklist_generator.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/checklists/test_checklist_generator.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/fonctionnelle/test_guide_fonctionnel_exemple.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/fonctionnelle/test_guide_fonctionnel_exemple.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/api/test_guide_api.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/api/test_guide_api.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/architecture/test_guide_architecture_exemple.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/architecture/test_guide_architecture_exemple.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/deploiement/test_guide_deploiement.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/deploiement/test_guide_deploiement.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/maintenance/test_guide_maintenance.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/maintenance/test_guide_maintenance.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+_ ERROR collecting backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/securite/test_guide_securite.py _
+ImportError while importing test module '/workspaces/dihya.io/backend/components/metiers/threed/tests_centralises/legacy/documentation/guides/technique/securite/test_guide_securite.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/__init__.py:6: in <module>
+    from . import (
+tests_centralises/fixtures/__init__.py:11: in <module>
+    from . import core, helpers, services, generators, mocks, samples
+tests_centralises/fixtures/samples/__init__.py:17: in <module>
+    module = importlib.import_module(f"{__name__}.{name}")
+/usr/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests_centralises/fixtures/samples/test_samples.py:3: in <module>
+    from ...fixtures.samples.sample_fixture import sample_helper_fixture
+E   ModuleNotFoundError: No module named 'threed.tests_centralises.fixtures.samples.sample_fixture'
+=========================== short test summary info ============================
+ERROR tests_centralises/api/accessibility/test_accessibility.py
+ERROR tests_centralises/api/audit/test_audit.py
+ERROR tests_centralises/api/controllers/test_threed_controller.py
+ERROR tests_centralises/api/core/test_api.py
+ERROR tests_centralises/api/db/test_db.py
+ERROR tests_centralises/api/hooks/test_hooks.py
+ERROR tests_centralises/api/middlewares/test_middlewares.py
+ERROR tests_centralises/api/rgpd/test_rgpd.py
+ERROR tests_centralises/api/samples/accessibility/test_sample_accessibility.py
+ERROR tests_centralises/api/samples/audit/test_sample_audit.py
+ERROR tests_centralises/api/samples/controllers/test_sample_controllers.py
+ERROR tests_centralises/api/samples/core/test_sample_core.py
+ERROR tests_centralises/api/samples/db/test_sample_db.py
+ERROR tests_centralises/api/samples/hooks/test_sample_hooks.py
+ERROR tests_centralises/api/samples/middlewares/test_sample_middlewares.py
+ERROR tests_centralises/api/samples/rgpd/test_sample_rgpd.py
+ERROR tests_centralises/api/samples/validators/test_sample_validators.py
+ERROR tests_centralises/api/validators/test_validators.py
+ERROR tests_centralises/fixtures/samples/test_samples.py
+ERROR tests_centralises/guides/accessibility/test_guide_accessibilite.py
+ERROR tests_centralises/guides/audit/test_guide_audit.py
+ERROR tests_centralises/guides/best_practices/test_guide_bonnes_pratiques.py
+ERROR tests_centralises/guides/functional/test_guide_fonctionnel.py
+ERROR tests_centralises/guides/integration/test_guide_integration.py
+ERROR tests_centralises/guides/rgpd/test_guide_rgpd.py
+ERROR tests_centralises/guides/samples/test_guide_sample.py
+ERROR tests_centralises/guides/security/test_guide_securite.py
+ERROR tests_centralises/guides/technical/test_guide_technique.py
+ERROR tests_centralises/integration/api/test_api_integration.py
+ERROR tests_centralises/integration/external_connectors/test_external_connectors_integration.py
+ERROR tests_centralises/integration/monitoring/test_monitoring_integration.py
+ERROR tests_centralises/integration/pipelines/test_integration_pipelines.py
+ERROR tests_centralises/integration/plugins/test_plugins_integration.py
+ERROR tests_centralises/integration/samples/test_sample_integration.py
+ERROR tests_centralises/legacy/audit/guides/exemples/test_guide_exemple.py
+ERROR tests_centralises/legacy/audit/guides/technique/bonnes_pratiques/test_audit_bonnes_pratiques.py
+ERROR tests_centralises/legacy/audit/guides/technique/checklists/test_audit_checklist_professionnelle.py
+ERROR tests_centralises/legacy/audit/guides/technique/guides/test_audit_guide.py
+ERROR tests_centralises/legacy/audit/models/test_models.py
+ERROR tests_centralises/legacy/audit/scripts/analyse/test_analyse_data.py
+ERROR tests_centralises/legacy/audit/scripts/export/test_export_data.py
+ERROR tests_centralises/legacy/audit/scripts/report/test_report_generator.py
+ERROR tests_centralises/legacy/audit/services/test_api_service.py
+ERROR tests_centralises/legacy/documentation/checklists/test_checklist_generator.py
+ERROR tests_centralises/legacy/documentation/guides/fonctionnelle/test_guide_fonctionnel_exemple.py
+ERROR tests_centralises/legacy/documentation/guides/technique/api/test_guide_api.py
+ERROR tests_centralises/legacy/documentation/guides/technique/architecture/test_guide_architecture_exemple.py
+ERROR tests_centralises/legacy/documentation/guides/technique/deploiement/test_guide_deploiement.py
+ERROR tests_centralises/legacy/documentation/guides/technique/maintenance/test_guide_maintenance.py
+ERROR tests_centralises/legacy/documentation/guides/technique/securite/test_guide_securite.py
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 50 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+============================== 50 errors in 1.36s ==============================

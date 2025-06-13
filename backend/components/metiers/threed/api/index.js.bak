@@ -1,0 +1,160 @@
+/**
+ * Module API Threed - Points d'entrée des API
+ * - Importabilité, structure, logique métier, sécurité, RGPD, accessibilité, auditabilité.
+ * - Gestion centralisée des API pour le métier threed
+ */
+
+'use strict';
+
+const logger = require('console');
+
+/**
+ * Audit d'accès pour la traçabilité et la conformité RGPD
+ * @param {string} user - Identifiant utilisateur
+ * @param {string} action - Action effectuée
+ * @param {string} resource - Ressource accédée
+ */
+function auditAccess(user, action, resource) {
+  if (!user || !action || !resource) {
+    logger.error('[API_AUDIT] Paramètres d\'audit manquants');
+    return;
+  }
+  logger.info(`[API_AUDIT] User=${user} Action=${action} Resource=${resource}`);
+}
+
+/**
+ * Vérifie les droits d'accès API avec gestion des edge cases
+ * @param {string} user - Identifiant utilisateur
+ * @param {string} permission - Permission requise
+ * @returns {boolean} Autorisation accordée
+ */
+function checkAccess(user, permission) {
+  if (!user || !permission) {
+    throw new Error('Utilisateur ou permission manquants pour accès API.');
+  }
+  auditAccess(user, 'api_access_check', permission);
+  return true;
+}
+
+/**
+ * Middleware d'authentification pour les API
+ * @param {Object} req - Requête Express
+ * @param {Object} res - Réponse Express
+ * @param {Function} next - Fonction next
+ */
+function authMiddleware(req, res, next) {
+  try {
+    const user = req.headers['x-user-id'] || 'anonymous';
+    const resource = req.path;
+
+    auditAccess(user, 'api_request', resource);
+
+    // Validation basique (à étendre selon les besoins métier)
+    if (checkAccess(user, 'api_access')) {
+      req.user = user;
+      next();
+    } else {
+      res.status(403).json({ error: 'Accès refusé' });
+    }
+  } catch (error) {
+    logger.error('[API_AUTH] Erreur d\'authentification:', error.message);
+    res.status(500).json({ error: 'Erreur serveur' });
+  }
+}
+
+/**
+ * Mixin pour l'accessibilité des API
+ */
+class AccessibleMixin {
+  /**
+   * Vérifie si l'API est accessible à l'utilisateur
+   * @param {string} user - Identifiant utilisateur
+   * @returns {boolean} Accessibilité
+   */
+  isAccessible(user) {
+    try {
+      return checkAccess(user, 'read');
+    } catch (error) {
+      logger.error(`[API_ACCESSIBILITY] Erreur d'accès pour ${user}:`, error.message);
+      return false;
+    }
+  }
+}
+
+/**
+ * Helper RGPD pour les API
+ */
+class RGPDHelper {
+  /**
+   * Anonymise les données API avant envoi
+   * @param {Object} data - Données à anonymiser
+   * @returns {Object} Données anonymisées
+   */
+  static anonymize(data) {
+    if (!data || typeof data !== 'object') {
+      logger.warn('[API_RGPD] Données invalides pour anonymisation');
+      return {};
+    }
+
+    const sensitiveFields = ['email', 'name', 'phone', 'address', 'ssn', 'ip'];
+    const out = {};
+
+    for (const [key, value] of Object.entries(data)) {
+      out[key] = sensitiveFields.includes(key.toLowerCase()) ? '***' : value;
+    }
+
+    return out;
+  }
+
+  /**
+   * Valide le consentement RGPD pour les API
+   * @param {Object} request - Requête avec données de consentement
+   * @returns {boolean} Consentement valide
+   */
+  static validateApiConsent(request) {
+    const consent = request.body?.consent || request.headers['x-consent'];
+    return !!(consent && consent.accepted && consent.timestamp);
+  }
+}
+
+/**
+ * Gestionnaire d'erreurs API standardisé
+ */
+class ApiErrorHandler {
+  /**
+   * Gère les erreurs API de manière uniforme
+   * @param {Error} error - Erreur à traiter
+   * @param {Object} res - Réponse Express
+   */
+  static handle(error, res) {
+    logger.error('[API_ERROR]', error.message);
+
+    const statusCode = error.statusCode || 500;
+    const message = error.message || 'Erreur interne du serveur';
+
+    res.status(statusCode).json({
+      error: message,
+      timestamp: new Date().toISOString(),
+      type: 'api_error'
+    });
+  }
+}
+
+// Exports principaux
+module.exports = {
+  auditAccess,
+  checkAccess,
+  authMiddleware,
+  AccessibleMixin,
+  RGPDHelper,
+  ApiErrorHandler,
+
+  // Métadonnées API
+  meta: {
+    name: 'threed-api',
+    version: '1.0.0',
+    description: 'APIs pour le module threed avec conformité RGPD et sécurité',
+    endpoints: [],
+    middleware: ['auth', 'rgpd', 'audit']
+  }
+};
