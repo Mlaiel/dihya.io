@@ -1,34 +1,22 @@
-# Scripts d’automatisation – Sécurité 3D
+# README – Module Threed
 
-Ce dossier contient :
-- Scripts de backup/restore sécurité
-- Scripts d’audit automatisé
-- Scripts de conformité
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Exemples de scripts
-- backup_security.sh
-- restore_security.sh
-- audit_security.sh
-- compliance_check.py
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-# scripts/
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-Ce dossier regroupe les scripts de sécurité :
-- `audit/` : scripts d’audit de sécurité (Node.js, Python, Shell)
-- `backup/` : scripts de sauvegarde (Node.js, Python, Shell)
-- `compliance/` : scripts de conformité (Node.js, Python)
-- `restore/` : scripts de restauration (Node.js, Python, Shell)
-- `samples/` : exemples avancés d’utilisation (audit, backup, compliance, restore)
+---
 
-Chaque sous-dossier contient :
-- Les scripts principaux
-- Un README explicatif
-- Les fichiers d’initialisation (`__init__.js`, `__init__.py`)
-- Un fichier `.keep` pour le versionnement
-
-Le point d’entrée principal du module est `index.js`.
-
-## Bonnes pratiques
-- Ajouter tout nouveau script ou exemple dans le sous-dossier approprié.
-- Documenter chaque script et fournir des exemples d’utilisation.
-- Ajouter des tests unitaires pour chaque script.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

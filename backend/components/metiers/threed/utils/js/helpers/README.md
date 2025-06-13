@@ -1,36 +1,22 @@
-# helpers – JS Ultra Avancé (clé en main)
+# README – Module Threed
 
-Ce dossier contient les helpers JS pour Threed : fonctions utilitaires, testées, synchronisées JS/Python, prêtes pour CI/CD, audit et documentation automatique.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure du sous-module
-- `js_helper.js` : helpers JS critiques (ex : conversion, manipulation de chaînes)
-- `js_helper.test.js` : tests unitaires avancés (edge cases, robustesse, conformité)
-- `js_helper.py` : équivalent Python pour synchronisation et CI/CD
-- `js_helper.test.py` : tests unitaires Python
-- `__init__.js` / `__init__.py` : points d’entrée modulaires (import global, CI/CD, audit)
-- `__init__.test.js` / `__init__.test.py` : tests d’import (conformité, audit)
-- `README.md` : documentation avancée, exemples, bonnes pratiques
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d’utilisation
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-### JS
-```js
-const { toCamelCase } = require('./js_helper');
-console.log(toCamelCase('hello_world'));
-```
+---
 
-### Python
-```python
-from .js_helper import to_camel_case
-print(to_camel_case('hello_world'))
-```
-
-## Synchronisation & CI/CD
-- Toutes les fonctions sont testées (unitaires, edge cases)
-- Points d’entrée uniques pour import modulaire et audit
-- Prêt pour intégration continue (CI/CD) et documentation automatique
-
-## Bonnes pratiques
-- Garder ce dossier centré sur les helpers JS (pas de fallback ici)
-- Chaque fonction : typée, documentée, testée, robuste
-- Respecter la conformité, la traçabilité et la logique métier
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

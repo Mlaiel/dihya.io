@@ -9,17 +9,17 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Beispiel für eine mehrsprachige URL -->
   <url>
-    <loc>https://example.com/de/3d/</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/3d/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/3d/" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://example.com/fr/3d/" />
+    <loc>https://example.com/de/threed/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/de/threed/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/en/threed/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://example.com/fr/threed/" />
     <lastmod>2024-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Beispiel für eine dynamisch generierte URL (Mandant/Plugin) -->
   <url>
-    <loc>https://example.com/mandant-a/3d/</loc>
+    <loc>https://example.com/mandant-a/threed/</loc>
     <lastmod>2024-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -1,25 +1,22 @@
-# Exemples d’intégration Audit Node.js
+# README – Module Threed
 
-Ce dossier contient des exemples ultra avancés, clé en main, pour l’intégration du module Audit côté Node.js et Python.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `__init__.js` : Point d’entrée JS pour les samples Audit
-- `__init__.py` : Point d’entrée Python pour les samples Audit
-- `sample_audit_nodejs.js` : Exemple d’intégration Audit Node.js (usage, import, export, logique métier)
-- `sample_audit_python.py` : Exemple d’intégration Audit Python (interopérabilité, logique métier)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation Node.js
-```js
-import { runAuditSample } from './sample_audit_nodejs.js';
-runAuditSample();
-```
-
-## Utilisation Python
-```python
-from .sample_audit_python import run_audit_sample
-run_audit_sample()
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Ajoutez ici vos propres scénarios d’intégration avancée pour l’Audit métier.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

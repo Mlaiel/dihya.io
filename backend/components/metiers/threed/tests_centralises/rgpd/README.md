@@ -1,21 +1,22 @@
-# Tests centralisés RGPD – Threed
+# README – Module Threed
 
-## Objectif
-Ce module regroupe tous les tests ultra avancés pour la conformité RGPD du métier Threed, avec structure modulaire, synchronisation JS/Python, auto-discovery, documentation automatique, CI/CD, auditabilité, et respect du cahier des charges.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `core/` : Tests cœur RGPD
-- `helpers/` : Tests helpers RGPD
-- `samples/` : Tests sur jeux de données RGPD
-- `tests/` : Suites de tests ultra avancées, parité JS/Python
-- `index.js` : Exécution centralisée de tous les tests JS RGPD
-- `__init__.js` et `__init__.py` : Initialisation et auto-discovery JS/Python
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exécution
-- **JS** : `npm test` ou via pipeline CI, ou via `index.js`
-- **Python** : `pytest` ou via pipeline CI
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## CI/CD
-- Intégration complète dans les pipelines existants
-- Synchronisation automatique JS/Python
-- Documentation et auditabilité incluses
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

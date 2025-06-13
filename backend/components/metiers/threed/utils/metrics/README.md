@@ -1,73 +1,22 @@
-# Metrics – Structure avancée
+# README – Module Threed
 
-Ce module est organisé pour une évolutivité et une conformité maximale :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `core/` : logique métier principale (metrics.js, metrics.py, tests, README)
-- `helpers/` : helpers metrics (exemple, tests, README)
-- `fallback/` : fallback metrics (gestion d’échec, tests, README, structure tests)
-- `README.md` : documentation générale
-- Fichiers d'organisation/init : `__init__.js`, `__init__.py`, `index.js`, `index.test.js`, `index.test.py`, `__init__.test.js`, `__init__.test.py`
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques
-- Un helper = une fonction réutilisable, testée, documentée
-- Un fallback = une solution de secours robuste, testée
-- Le core = la logique métier principale, testée
-- Ajoutez des tests d'intégration dans chaque sous-dossier si besoin
-- Respectez la conformité, la traçabilité et la logique métier
-
-## Exemple de structure
-
-```
-core/
-  metrics.js
-  metrics.py
-  metrics.test.js
-  metrics.test.py
-helpers/
-  metrics_helper.js
-  metrics_helper.py
-  metrics_helper.test.js
-  metrics_helper.test.py
-fallback/
-  fallback.js
-  fallback.py
-  tests/
-    fallback.test.js
-    fallback.test.py
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-Pour toute extension, créez un sous-dossier dédié (ex : `adapters/`, `formats/`, etc.) selon la logique métier.
-
----
-
-## Dossier `samples/`
-
-Le dossier `samples/` contient :
-- `sample_usage.js` : exemple d’utilisation JS du module metrics (calcul de moyenne, etc.)
-- `sample_usage.py` : exemple d’utilisation Python
-- `sample_metrics_data.json` : jeu de données d’exemple
-- Un README détaillé avec structure, exemples, bonnes pratiques
-
-### Utilisation rapide
-
-**JS**
-```js
-const metrics = require('./core/metrics');
-const data = require('./samples/sample_metrics_data.json').metrics;
-console.log(metrics.calculerMoyenne(data));
-```
-
-**Python**
-```python
-from .core import metrics
-import json
-with open('samples/sample_metrics_data.json') as f:
-    data = json.load(f)["metrics"]
-print(metrics.calculer_moyenne(data))
-```
-
----
-
-> Ajoutez vos propres exemples ou cas métiers dans `samples/` pour accélérer l’intégration et la validation du module metrics.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

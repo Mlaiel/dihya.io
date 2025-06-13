@@ -1,4 +1,4 @@
-// service_threed.js - Service principal 3D (JS)
+// service_threed.js - Service principal threed (JS)
 class ServiceThreed {
   constructor(options = {}) {
     this.options = options;
@@ -48,11 +48,11 @@ class ServiceThreed {
 }
 
 // --- Funktions-API für Legacy-Tests ---
-function get3DModel(id) {
+function getthreedModel(id) {
   if (id === undefined) throw new Error('id requis');
   return { id, name: 'Model ' + id };
 }
-function list3DModels() {
+function listthreedModels() {
   return [
     { id: 1, name: 'Model 1' },
     { id: 2, name: 'Model 2' },
@@ -71,9 +71,10 @@ function secureAccess(user, action) {
   return false;
 }
 
-module.exports = Object.assign(ServiceThreed, {
-  get3DModel,
-  list3DModels,
+module.exports = {
+  ServiceThreed,
+  getthreedModel,
+  listthreedModels,
   auditModel,
   secureAccess
-});
+};

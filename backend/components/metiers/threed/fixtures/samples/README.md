@@ -1,26 +1,22 @@
-# helpers/core/samples
+# README – Module Threed
 
-Ce dossier contient les fixtures d'exemple (sample_fixture) pour helpers/core (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `sample_fixture.py` : Fixture d'exemple Python (sample_helper_fixture)
-- `sample_fixture.js` : Fixture d'exemple JS (sample)
-- `__init__.py` / `__init__.js` : Points d'entrée pour import direct
-- `sample_fixture.test.py` / `sample_fixture.test.js` : Tests unitaires
-- `__init__.test.py` / `__init__.test.js` : Tests d'import et de structure
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d'utilisation
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-### Python
-```python
-from .sample_fixture import sample_helper_fixture
-```
+---
 
-### JavaScript
-```js
-const { sample } = require('./sample_fixture');
-```
-
-## Conformité
-- Respecte la logique métier 3D avancée
-- Compatible avec les outils de test et d'intégration continue
-- Prêt pour l'audit et la documentation automatique
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

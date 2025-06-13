@@ -13,7 +13,7 @@ router.use(rgpdMiddleware);
 router.use(accessibilityMiddleware);
 router.use(auditRequest);
 
-// GET 3D entity by ID
+// GET threed entity by ID
 router.get('/threed/:id', async (req, res) => {
   beforeAction('read', { id: req.params.id });
   try {
@@ -29,7 +29,7 @@ router.get('/threed/:id', async (req, res) => {
   }
 });
 
-// POST create 3D entity
+// POST create threed entity
 router.post('/threed', async (req, res) => {
   beforeAction('create', req.body);
   try {
@@ -42,7 +42,7 @@ router.post('/threed', async (req, res) => {
   }
 });
 
-// PUT update 3D entity
+// PUT update threed entity
 router.put('/threed/:id', async (req, res) => {
   beforeAction('update', { id: req.params.id, ...req.body });
   try {
@@ -55,7 +55,7 @@ router.put('/threed/:id', async (req, res) => {
   }
 });
 
-// DELETE 3D entity
+// DELETE threed entity
 router.delete('/threed/:id', async (req, res) => {
   beforeAction('delete', { id: req.params.id });
   try {

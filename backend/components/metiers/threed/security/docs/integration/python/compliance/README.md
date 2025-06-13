@@ -1,19 +1,22 @@
-# Compliance Python – Documentation & Intégration
+# README – Module Threed
 
-Ce dossier contient les helpers Python et JS pour l’intégration Compliance métier.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Helpers disponibles
-- `compliance_helper.py` : Fonctions métier Python
-- `compliance_helper.js` : Fonctions métier Node.js/JS
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation
-```python
-from .compliance_helper import *
-```
-```js
-import { complianceHello } from './compliance_helper.js';
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Ajoutez ici vos guides, exemples et scénarios d’intégration Compliance.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

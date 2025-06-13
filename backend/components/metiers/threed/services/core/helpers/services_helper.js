@@ -32,7 +32,7 @@ class ServicesHelper {
   }
 
   /**
-   * Ajoute une entrée d’audit pour chaque action critique.
+   * Ajoute une entrée d'audit pour chaque action critique.
    * @private
    */
   _audit(action, payload) {
@@ -40,37 +40,43 @@ class ServicesHelper {
   }
 
   /**
-   * Récupère l’historique d’audit.
+   * Récupère l'historique d'audit.
    */
   getAuditTrail() {
     return this.auditTrail;
   }
 }
 
-// --- Funktions-API für Legacy-Tests ---
+// --- Fonctions API pour Legacy-Tests ---
 function getServiceStatus() {
-  return { status: 'ok' };
+  return { status: 'ok', timestamp: new Date().toISOString() };
 }
+
 function simulateHeavyLoad() {
   return 'x'.repeat(10000);
 }
+
 function auditService(input) {
   return `Audit avancé: ${input}`;
 }
+
 function simulateExtremeLoad() {
   return 'x'.repeat(100000);
 }
+
 function checkAccess(user, action) {
   if (!user || !user.role) return false;
   if (user.role === 'admin') return true;
   if (user.role === 'user' && action === 'read') return true;
+  if (user.role === 'user' && action === 'write') return false;
   return false;
 }
 
-module.exports = Object.assign(ServicesHelper, {
+module.exports = {
+  ServicesHelper,
   getServiceStatus,
   simulateHeavyLoad,
   auditService,
   simulateExtremeLoad,
   checkAccess
-});
+};

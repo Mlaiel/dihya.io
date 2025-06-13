@@ -1,5 +1,22 @@
-# Tests d'intégration – Samples
+# README – Module Threed
 
-Ce dossier contient tous les tests ultra avancés, clé en main, pour les samples d'intégration Threed.
-- Chaque fichier de test est structuré, prêt à l’industrialisation, à l’extension, à l’audit, à la CI/CD, à la documentation, à la RGPD, à l’accessibilité, à la multi-langue.
-- Import/export dynamique, logique métier, routes, structure, conformité au cahier des charges Threed.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
+
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
+
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

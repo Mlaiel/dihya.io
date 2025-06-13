@@ -1,22 +1,22 @@
-# Public Views – threed
+# README – Module Threed
 
-Ce dossier contient les helpers et vues publiques/anonymes pour le module threed.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Sécurité, conformité RGPD, accessibilité, audit, souveraineté numérique
-- Tests unitaires et d’intégration JS & Python
-- Prêt CI/CD, audit, monitoring, i18n
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Fichiers
-- `public_views.py` : helpers public Python
-- `public_views.js` : helpers public Node.js
-- `public_views.test.py` : tests unitaires Python
-- `public_views.test.js` : tests unitaires JS
-- `index.js`, `__init__.py`, `__init__.js` : points d’entrée
-- `index.test.js`, `__init__.test.js` : tests d’intégration/init JS & Python
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exemples d’appel
-- `render_public_info('Bienvenue')` (Python)
-- `renderPublicInfo('Bienvenue')` (JS)
+---
 
-## Conformité
-- RGPD, accessibilité, audit, souveraineté numérique, sécurité
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

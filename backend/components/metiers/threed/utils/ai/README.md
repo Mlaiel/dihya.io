@@ -1,43 +1,22 @@
-# AI – Module IA ultra avancé (utils/ai)
+# README – Module Threed
 
-Ce module regroupe toute la logique IA métier, les helpers, les fallbacks, les samples et la structure de tests ultra avancée, clé en main, conforme au cahier des charges.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `core/` : logique métier principale IA (ai_core.js, ai_core.py, tests, README, points d’entrée, synchronisation JS/Python)
-- `fallback/` : fallback IA (logique métier, tests unitaires, tests d’intégration, helpers, structure modulaire, audit, CI/CD, README, points d’entrée)
-- `helpers/` : helpers IA (JS/Python, tests, README, points d’entrée, synchronisation JS/Python)
-- `samples/` : exemples ultra avancés de helpers et de tests IA (JS/Python, tests, README, points d’entrée)
-- `README.md` : documentation générale, structure, conformité, exemples d’usage
-- Fichiers d’organisation/init : `__init__.js`, `__init__.py`, `index.js`, `index.test.js`, `index.test.py`, `__init__.test.js`, `__init__.test.py`
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Points d’entrée globaux
-- `__init__.js` / `__init__.py` : import global de tous les sous-modules IA (helpers, core, fallback, samples)
-- `index.js` : point d’entrée global JS (import de tous les sous-modules)
-- `index.test.js` / `index.test.py` : tests d’import du point d’entrée global (JS & Python)
-- `__init__.test.js` / `__init__.test.py` : tests d’import des points d’entrée (JS & Python)
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exemples d’utilisation
+---
 
-**JavaScript**
-```js
-const ai = require('./index.js');
-ai.core.process('input');
-ai.helpers.normalizeText('foo');
-ai.fallback.fallback('bar');
-ai.samples.sampleAiHelper('baz');
-```
-
-**Python**
-```python
-from .core import *
-from .helpers import *
-from .fallback import *
-from .samples import *
-```
-
-## Bonnes pratiques
-- Tous les points d’entrée sont testés automatiquement (JS & Python)
-- Synchronisation JS/Python assurée
-- Prêt pour CI/CD, audit et documentation automatique
-- Respect strict de la logique métier et du cahier des charges
-- Ajoutez des tests d’intégration et des samples pour chaque sous-module critique
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

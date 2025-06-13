@@ -1,25 +1,22 @@
-# Politiques RGPD – Documentation avancée
+# README – Module Threed
 
-Ce dossier regroupe toutes les politiques RGPD (FR/EN), la logique métier, les scripts JS/Python, et la documentation professionnelle.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `POLICY_RGPD_FR.md` : Politique RGPD (FR)
-- `POLICY_RGPD_EN.md` : RGPD Policy (EN)
-- `policies.js` : Fonctions métier, helpers et exports JS pour la gestion RGPD
-- `policies.py` : Fonctions métier, helpers et exports Python pour la gestion RGPD
-- `__init__.js` : Point d’entrée JS du module RGPD
-- `__init__.py` : Point d’entrée Python du module RGPD
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation JS
-```js
-import { getRgpdPolicy, setRgpdPolicy } from './policies.js';
-```
-
-## Utilisation Python
-```python
-from .policies import get_rgpd_policy, set_rgpd_policy
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Structure modulaire, claire, conforme au cahier des charges et à la logique métier.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

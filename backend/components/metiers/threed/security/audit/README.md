@@ -1,39 +1,22 @@
-# Audit & Journalisation – Sécurité 3D
+# README – Module Threed
 
-Ce dossier contient :
-- Sous-modules professionnels : report_templates, policies, log_examples, samples
-- Scripts d’audit automatisé (voir scripts/)
-- Modèles de rapports d’audit
-- Guide de journalisation avancée
-- Exemples de logs sécurité
-- Exemples ultra avancés clé en main (samples)
-- **Fichier `samples/index.js` : Point d’entrée modulaire pour tous les samples JS (logs, reports)**
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure professionnelle
-- `report_templates/` : modèles de rapports d’audit (JS, Python, Markdown)
-- `policies/` : politiques d’audit (JS, Python, Markdown)
-- `log_examples/` : exemples de logs d’audit (texte, JS, Python)
-- `samples/` : exemples ultra avancés clé en main (rapports, logs, etc.)
-  - `index.js` : Import modulaire de tous les samples JS d’audit
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation
-
-Import JS modulaire :
-```js
-const { logs, reports } = require('./audit/samples');
-// logs.sample_audit_log, reports.sample_audit_report, ...
-```
-
-## Bonnes pratiques
-- Activer l’audit trail sur toutes les actions sensibles
-- Stocker les logs dans un espace sécurisé, chiffré
-- Mettre en place une rotation et une purge régulière
-- Générer des alertes en cas d’anomalie
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-# Audit & Logging – 3D Security (EN)
-
-This folder contains audit scripts, report templates, advanced logging guides, and ultra-advanced samples. The `samples/index.js` file provides a modular JS entry point for all audit samples.
-
-See subfolders for details.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

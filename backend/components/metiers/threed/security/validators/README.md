@@ -1,20 +1,22 @@
-# validators/
+# README – Module Threed
 
-Ce dossier regroupe tous les validateurs de sécurité, organisés par thématique :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `input/` : validateurs d’input utilisateur (Node.js, Python)
-- `rgpd/` : validateurs de conformité RGPD (Node.js, Python)
-- `samples/` : exemples avancés d’utilisation (input, rgpd)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient :
-- Les scripts principaux
-- Un README explicatif
-- Les fichiers d’initialisation (`__init__.js`, `__init__.py`)
-- Un fichier `.keep` pour le versionnement
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-Le point d’entrée principal du module est `index.js`.
+---
 
-## Bonnes pratiques
-- Ajouter tout nouveau validateur ou exemple dans le sous-dossier approprié.
-- Documenter chaque validateur et fournir des exemples d’utilisation.
-- Ajouter des tests unitaires pour chaque validateur.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

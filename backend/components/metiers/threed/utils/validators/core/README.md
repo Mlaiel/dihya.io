@@ -1,19 +1,22 @@
-# core – Validators (clé en main, ultra avancé)
+# README – Module Threed
 
-Ce dossier contient la logique métier principale du module validators :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `validators.js` / `validators.py` : logique métier de validation (JS/Python)
-- `validators.test.js` / `validators.test.py` : tests unitaires associés
-- `__init__.js` / `__init__.py` : points d’entrée modulaires (synchronisation, conformité, CI/CD)
-- `__init__.test.js` / `__init__.test.py` : tests d’import et d’intégration (audit, conformité)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques
-- Garder ce dossier centré sur le cœur métier (pas de helpers ici)
-- Synchroniser JS/Python (API, logique, tests)
-- Ajouter un README par logique complexe si besoin
-- Documenter chaque ajout pour l’audit, la CI/CD et la traçabilité
-- Utiliser les points d’entrée `__init__` pour garantir la conformité et l’intégration continue
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Ce dossier est la référence pour la logique métier du module validators. Toute extension doit respecter la structure, la synchronisation JS/Python et la conformité métier.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

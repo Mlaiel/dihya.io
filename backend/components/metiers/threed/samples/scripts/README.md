@@ -1,12 +1,22 @@
-# scripts/
+# README – Module Threed
 
-Exemples avancés de scripts, organisés par sous-dossier thématique :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `audit/` : Exemples scripts d’audit (Node.js, Python)
-- `backup/` : Exemples scripts de sauvegarde (Node.js, Python)
-- `compliance/` : Exemples scripts de conformité (Node.js, Python)
-- `restore/` : Exemples scripts de restauration (Node.js, Python)
-- `index.js` : Point d’entrée principal JS ultra avancé
-- `doc.md` : Documentation détaillée
-- `__init__.js`, `__init__.py` : points d’entrée
-- `.keep` : versionnement du dossier
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
+
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

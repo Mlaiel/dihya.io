@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites name="jest tests" tests="362" failures="83" errors="0" time="12.54">
-  <testsuite name="Service principal 3D (JS)" errors="0" failures="4" skipped="0" timestamp="2025-06-05T02:20:13" time="1.669" tests="8">
-    <testcase classname="Service principal 3D (JS) get3DModel retourne un modèle" name="Service principal 3D (JS) get3DModel retourne un modèle" time="0.005">
-      <failure>TypeError: service.get3DModel is not a function
-    at Object.get3DModel (/workspaces/dihya.io/backend/components/metiers/threed/services/core/impl/service_threed.test.js:5:20)
+  <testsuite name="Service principal threed (JS)" errors="0" failures="4" skipped="0" timestamp="2025-06-05T02:20:13" time="1.669" tests="8">
+    <testcase classname="Service principal threed (JS) getthreedModel retourne un modèle" name="Service principal threed (JS) getthreedModel retourne un modèle" time="0.005">
+      <failure>TypeError: service.getthreedModel is not a function
+    at Object.getthreedModel (/workspaces/dihya.io/backend/components/metiers/threed/services/core/impl/service_threed.test.js:5:20)
     at Promise.then.completed (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:231:10)
@@ -19,9 +19,9 @@
     at runTest (/workspaces/dihya.io/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/workspaces/dihya.io/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Service principal 3D (JS) list3DModels retourne 3 modèles" name="Service principal 3D (JS) list3DModels retourne 3 modèles" time="0">
-      <failure>TypeError: service.list3DModels is not a function
-    at Object.list3DModels (/workspaces/dihya.io/backend/components/metiers/threed/services/core/impl/service_threed.test.js:9:20)
+    <testcase classname="Service principal threed (JS) listthreedModels retourne 3 modèles" name="Service principal threed (JS) listthreedModels retourne 3 modèles" time="0">
+      <failure>TypeError: service.listthreedModels is not a function
+    at Object.listthreedModels (/workspaces/dihya.io/backend/components/metiers/threed/services/core/impl/service_threed.test.js:9:20)
     at Promise.then.completed (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:298:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:231:10)
@@ -37,7 +37,7 @@
     at runTest (/workspaces/dihya.io/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/workspaces/dihya.io/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Service principal 3D (JS) auditModel fonctionne" name="Service principal 3D (JS) auditModel fonctionne" time="0">
+    <testcase classname="Service principal threed (JS) auditModel fonctionne" name="Service principal threed (JS) auditModel fonctionne" time="0">
       <failure>TypeError: service.auditModel is not a function
     at Object.auditModel (/workspaces/dihya.io/backend/components/metiers/threed/services/core/impl/service_threed.test.js:12:20)
     at Promise.then.completed (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:298:28)
@@ -55,7 +55,7 @@
     at runTest (/workspaces/dihya.io/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/workspaces/dihya.io/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Service principal 3D (JS) secureAccess contrôle l’accès" name="Service principal 3D (JS) secureAccess contrôle l’accès" time="0">
+    <testcase classname="Service principal threed (JS) secureAccess contrôle l’accès" name="Service principal threed (JS) secureAccess contrôle l’accès" time="0">
       <failure>TypeError: service.secureAccess is not a function
     at Object.secureAccess (/workspaces/dihya.io/backend/components/metiers/threed/services/core/impl/service_threed.test.js:16:20)
     at Promise.then.completed (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:298:28)
@@ -374,7 +374,7 @@ Received: &quot;undefined&quot;
     </testcase>
   </testsuite>
   <testsuite name="fixtures.generator.js" errors="0" failures="0" skipped="0" timestamp="2025-06-05T02:20:16" time="0.097" tests="2">
-    <testcase classname="fixtures.generator.js génère un modèle 3D dynamique avancé" name="fixtures.generator.js génère un modèle 3D dynamique avancé" time="0.001">
+    <testcase classname="fixtures.generator.js génère un modèle threed dynamique avancé" name="fixtures.generator.js génère un modèle threed dynamique avancé" time="0.001">
     </testcase>
     <testcase classname="fixtures.generator.js génère un utilisateur avancé" name="fixtures.generator.js génère un utilisateur avancé" time="0.001">
     </testcase>
@@ -858,15 +858,15 @@ Require stack:
     </testcase>
   </testsuite>
   <testsuite name="API Threed" errors="0" failures="0" skipped="0" timestamp="2025-06-05T02:20:17" time="0.365" tests="1">
-    <testcase classname="API Threed doit rendre une vue 3D via API" name="API Threed doit rendre une vue 3D via API" time="0.044">
+    <testcase classname="API Threed doit rendre une vue threed via API" name="API Threed doit rendre une vue threed via API" time="0.044">
     </testcase>
   </testsuite>
-  <testsuite name="validate3dEntity" errors="0" failures="0" skipped="0" timestamp="2025-06-05T02:20:17" time="0.075" tests="3">
-    <testcase classname="validate3dEntity valide une entité correcte" name="validate3dEntity valide une entité correcte" time="0.001">
+  <testsuite name="validatethreedEntity" errors="0" failures="0" skipped="0" timestamp="2025-06-05T02:20:17" time="0.075" tests="3">
+    <testcase classname="validatethreedEntity valide une entité correcte" name="validatethreedEntity valide une entité correcte" time="0.001">
     </testcase>
-    <testcase classname="validate3dEntity rejette une entité sans nom" name="validate3dEntity rejette une entité sans nom" time="0.011">
+    <testcase classname="validatethreedEntity rejette une entité sans nom" name="validatethreedEntity rejette une entité sans nom" time="0.011">
     </testcase>
-    <testcase classname="validate3dEntity rejette une entité avec un status invalide" name="validate3dEntity rejette une entité avec un status invalide" time="0.001">
+    <testcase classname="validatethreedEntity rejette une entité avec un status invalide" name="validatethreedEntity rejette une entité avec un status invalide" time="0.001">
     </testcase>
   </testsuite>
   <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2025-06-05T02:20:17" time="0.093" tests="2">
@@ -1230,7 +1230,7 @@ Received: &quot;Sample&quot;
     </testcase>
   </testsuite>
   <testsuite name="Validators Threed" errors="0" failures="2" skipped="0" timestamp="2025-06-05T02:20:18" time="0.067" tests="2">
-    <testcase classname="Validators Threed valide un modèle 3D correct" name="Validators Threed valide un modèle 3D correct" time="0">
+    <testcase classname="Validators Threed valide un modèle threed correct" name="Validators Threed valide un modèle threed correct" time="0">
       <failure>TypeError: validators.isValidModel is not a function
     at Object.isValidModel (/workspaces/dihya.io/backend/components/metiers/threed/utils/validators/core/validators.test.js:5:23)
     at Promise.then.completed (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:298:28)
@@ -1248,7 +1248,7 @@ Received: &quot;Sample&quot;
     at runTest (/workspaces/dihya.io/node_modules/jest-runner/build/runTest.js:444:34)
     at Object.worker (/workspaces/dihya.io/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
     </testcase>
-    <testcase classname="Validators Threed rejette un modèle 3D invalide" name="Validators Threed rejette un modèle 3D invalide" time="0">
+    <testcase classname="Validators Threed rejette un modèle threed invalide" name="Validators Threed rejette un modèle threed invalide" time="0">
       <failure>TypeError: validators.isValidModel is not a function
     at Object.isValidModel (/workspaces/dihya.io/backend/components/metiers/threed/utils/validators/core/validators.test.js:8:23)
     at Promise.then.completed (/workspaces/dihya.io/node_modules/jest-circus/build/utils.js:298:28)
@@ -2359,7 +2359,7 @@ Require stack:
     </testcase>
   </testsuite>
   <testsuite name="threed_views JS" errors="0" failures="0" skipped="0" timestamp="2025-06-05T02:20:22" time="0.043" tests="1">
-    <testcase classname="threed_views JS rend un modèle 3D" name="threed_views JS rend un modèle 3D" time="0.001">
+    <testcase classname="threed_views JS rend un modèle threed" name="threed_views JS rend un modèle threed" time="0.001">
     </testcase>
   </testsuite>
   <testsuite name="Import samples i18n (__init__.js)" errors="0" failures="0" skipped="0" timestamp="2025-06-05T02:20:22" time="0.06" tests="1">

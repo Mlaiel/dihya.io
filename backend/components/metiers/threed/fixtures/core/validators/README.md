@@ -1,32 +1,22 @@
-# helpers/validators
+# README – Module Threed
 
-Ce dossier contient les helpers de validation ultra avancés pour les fixtures Threed (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Fichiers principaux
-- `fixtures_validator.py` : Fonctions de validation Python (is_valid_3d_model, is_valid_user)
-- `fixtures_validator.js` : Fonctions de validation JS (isValid3DModel, isValidUser)
-- `__init__.py` / `__init__.js` : Points d’entrée pour import direct
-- `__init__.test.py` / `__init__.test.js` : Tests d’import et de structure
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d’utilisation synchronisés
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-### Python
-```python
-from .fixtures_validator import is_valid_3d_model, is_valid_user
-```
+---
 
-### JavaScript
-```js
-const { isValid3DModel, isValidUser } = require('./fixtures_validator');
-```
-
-## Conformité & audit
-- Respecte la logique métier 3D avancée
-- Compatible avec les outils de test, audit, CI/CD
-- Prêt pour la documentation automatique
-- Conforme RGPD, accessibilité, auditabilité
-
-## Bonnes pratiques
-- Utiliser les points d’entrée pour importer les validateurs
-- Maintenir la synchronisation JS/Python
-- Ajouter des tests et documenter chaque évolution
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

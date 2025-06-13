@@ -1,17 +1,22 @@
-# Exemples d’intégration Compliance (Python)
+# README – Module Threed
 
-Ce dossier contient des exemples avancés pour l’intégration du module Compliance côté Python et Node.js/JS.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Exemple Python
-```python
-from ...compliance.compliance_helper import compliance_nodejs_hello
-print(compliance_nodejs_hello())
-```
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemple JS
-```js
-import { complianceHello } from '../../compliance/compliance_helper.js';
-console.log(complianceHello());
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-> Ajoutez ici des scénarios de conformité, des tests, ou des cas d’usage avancés.
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

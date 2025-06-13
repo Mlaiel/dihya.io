@@ -1,15 +1,22 @@
-# templates/templates – Dossier de templates ultra avancés (Threed)
+# README – Module Threed
 
-Ce dossier contient les templates HTML/Jinja2 utilisés pour les tests, l’audit, la conformité et la génération dynamique dans le module Threed.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure recommandée
-- `test_template.html` : exemple de template HTML pour tests unitaires ou intégration.
-- `test_template.j2` : exemple de template Jinja2 pour la logique Python.
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques
-- Ajouter un README pour chaque sous-dossier de templates.
-- Documenter l’usage métier de chaque template.
-- Synchroniser les templates avec les évolutions des APIs et des guides.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
-*README généré automatiquement – 2025-06-05*
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

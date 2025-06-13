@@ -2,7 +2,7 @@
 
 ## Dossier `reports` — Ultra Avancé, Clé en Main
 
-Ce dossier regroupe tous les rapports automatisés et manuels générés par les outils de qualité, de tests et d’audit pour le module métier 3D. Il répond à un besoin de centralisation, de traçabilité et de conformité, conformément au cahier des charges et aux exigences professionnelles.
+Ce dossier regroupe tous les rapports automatisés et manuels générés par les outils de qualité, de tests et d’audit pour le module métier threed. Il répond à un besoin de centralisation, de traçabilité et de conformité, conformément au cahier des charges et aux exigences professionnelles.
 
 ### Structure et logique métier
 
@@ -33,4 +33,4 @@ Ce dossier regroupe tous les rapports automatisés et manuels générés par les
 
 ---
 
-*Ce dossier est un point clé pour la qualité logicielle, la conformité et la traçabilité du module métier 3D. Toute modification de structure ou de contenu doit respecter la logique métier et le cahier des charges.*
+*Ce dossier est un point clé pour la qualité logicielle, la conformité et la traçabilité du module métier threed. Toute modification de structure ou de contenu doit respecter la logique métier et le cahier des charges.*

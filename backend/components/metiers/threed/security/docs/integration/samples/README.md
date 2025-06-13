@@ -1,20 +1,22 @@
-# 📦 Integration Samples (Node.js & Python)
+# README – Module Threed
 
-Ce dossier centralise les exemples d’intégration ultra avancés pour tous les modules métier (API, RBAC, Audit, Compliance, Monitoring, Onboarding) côté Node.js et Python.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- Un sous-dossier `nodejs/` pour les samples Node.js
-- Un sous-dossier `python/` pour les samples Python
-- Un fichier `index.js` permet l'import centralisé de tous les samples Node.js et Python
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation de l'index modulaire
-```js
-import * as samples from './index.js';
-samples.nodejs.api.runApiSample();
-samples.python.api.runApiSample();
-// ...etc.
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Ajoutez ici des liens ou des guides pour naviguer entre les samples Node.js et Python.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

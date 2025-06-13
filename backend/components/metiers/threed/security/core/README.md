@@ -1,37 +1,22 @@
-# Cœur métier sécurité – 3D Security Core
+# README – Module Threed
 
-Ce dossier contient :
-- Politiques de sécurité (RBAC, ABAC, MFA)
-- Gestion des accès et sessions
-- Chiffrement/déchiffrement (AES, RSA, PBKDF2)
-- Fonctions utilitaires sécurité
-- Exemples d’intégration API
-- **Dossier `samples/` : Exemples ultra avancés clé en main (policies, crypto, access_control)**
-- **Fichier `index.js` : Point d’entrée modulaire pour tous les modules JS (policy, crypto, access_control, samples)**
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `policy/` : Politiques de sécurité, modèles, helpers
-- `crypto/` : Fonctions de chiffrement, gestion des clés
-- `access_control/` : Gestion des accès, sessions, MFA
-- `samples/` : Exemples clé en main (voir README dédié)
-- `index.js` : Import modulaire de tous les modules JS du core
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation
-
-Import JS modulaire :
-```js
-const { policy, crypto, accessControl, samples } = require('./core');
-// policy.<...>, crypto.<...>, accessControl.<...>, samples.policies, ...
-```
-
-## Bonnes pratiques
-- Séparer logique métier et logique sécurité
-- Utiliser des algorithmes éprouvés (jamais maison)
-- Documenter chaque politique et point d’entrée critique
-- Utiliser les samples pour accélérer l’intégration et les tests
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-# 3D Security Core (EN)
-
-This folder contains core security logic, policies, encryption utilities, and advanced samples for direct integration. See `samples/` for ready-to-use code. The `index.js` file provides a modular JS entry point for all core modules.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

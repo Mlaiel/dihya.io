@@ -1,4 +1,4 @@
-# Documentation ultra avancée – Security 3D
+# Documentation ultra avancée – Security threed
 
 ## Sommaire
 - [Architecture](#architecture)
@@ -49,6 +49,6 @@ Voir `README.md` et `core/` pour la structure modulaire, extensible, conforme De
 
 ---
 
-# Technical documentation – 3D Security
+# Technical documentation – threed Security
 
 See each subfolder for ready-to-use scripts, policies, and guides.

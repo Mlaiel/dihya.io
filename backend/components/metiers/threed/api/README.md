@@ -1,42 +1,22 @@
-# fixtures/helpers
+# README – Module Threed
 
-Helpers avancés pour les fixtures 3D (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure ultra avancée
-- `helpers/` : helpers métiers principaux (génération, manipulation, accès aux fixtures)
-- `validators/` : helpers de validation (conformité, RGPD, accessibilité, etc.)
-- `__init__.py` / `__init__.js` : points d’entrée modulaires synchronisés
-- `__init__.test.py` / `__init__.test.js` : tests d’import des points d’entrée
-- `index.js` : point d’entrée modulaire JS (clé en main)
-- `index.test.js` / `index.test.py` : tests d’import et de présence du point d’entrée
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient :
-- Fichiers helpers (JS & Python)
-- Points d’entrée (`__init__`, `index.js`)
-- Tests unitaires et d’import (JS & Python)
-- README détaillé (structure, exemples synchronisés JS/Python, conformité, CI/CD, bonnes pratiques)
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exemples d’utilisation synchronisés
+---
 
-### Python
-```python
-from fixtures.helpers.helpers import get_model_by_id, list_all_models, validate_fixture
-from fixtures.helpers.validators import is_valid_3d_model, is_valid_user
-```
-
-### JavaScript
-```js
-const { getModelById, listAllModels, validateFixture } = require('./helpers/helpers/fixtures.helper');
-const { isValid3DModel, isValidUser } = require('./validators/fixtures_validator');
-```
-
-## Conformité & CI/CD
-- 100% testé (unitaires, import, audit)
-- Prêt pour audit, documentation automatique, CI/CD
-- Synchronisation stricte JS/Python
-- Conforme RGPD, accessibilité, auditabilité
-
-## Bonnes pratiques
-- Utiliser les points d’entrée (`index.js`, `__init__`) pour importer les helpers
-- Respecter la structure modulaire pour faciliter la maintenance, l’audit et la documentation
-- Mettre à jour la documentation à chaque évolution majeure
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

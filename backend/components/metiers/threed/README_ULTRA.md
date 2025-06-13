@@ -1,4 +1,4 @@
-# Threed (3D) – Documentation Ultra Avancée
+# Threed (threed) – Documentation Ultra Avancée
 
 ## Objectif
 Fournir un module clé en main, ultra avancé, conforme à toutes les exigences (tests, RGPD, accessibilité, sécurité, plugins, souveraineté, etc.).

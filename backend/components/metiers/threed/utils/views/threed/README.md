@@ -1,20 +1,22 @@
-# 3D Views – threed (clé en main, ultra avancé)
+# README – Module Threed
 
-Ce dossier contient les helpers et vues spécifiques au rendu ou à l’export 3D du module threed.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Respect RGPD, accessibilité, audit, souveraineté numérique, sécurité
-- Tests unitaires et d’intégration JS & Python (présents dans ce dossier)
-- Points d’entrée JS/Python (`__init__.js`, `__init__.py`) et leurs tests (`__init__.test.js`, `__init__.test.py`)
-- Helpers synchronisés JS/Python (`threed_views.js`, `threed_views.py`)
-- Tests unitaires JS/Python (`threed_views.test.js`, `threed_views.test.py`)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d’appel
-- `render_3d('Cube')` (Python)
-- `render3D('Cube')` (JS)
-
-## Conformité
-- RGPD, accessibilité, audit, souveraineté numérique, sécurité, CI/CD
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Ce dossier est la référence pour les vues et helpers 3D du module threed. Toute extension doit respecter la structure, la synchronisation JS/Python et la conformité métier.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

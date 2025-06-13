@@ -35,14 +35,14 @@ req = mock_request({'foo': 'bar'})
 
 ### Validation (JS)
 ```js
-const { isValid3DModel } = require('./helpers/validators');
-assert(isValid3DModel(model));
+const { isValidthreedModel } = require('./helpers/validators');
+assert(isValidthreedModel(model));
 ```
 
 ### Validation (Python)
 ```python
-from .helpers.validators import is_valid_3d_model
-assert is_valid_3d_model(model)
+from .helpers.validators import is_valid_threed_model
+assert is_valid_threed_model(model)
 ```
 
 ## Bonnes pratiques

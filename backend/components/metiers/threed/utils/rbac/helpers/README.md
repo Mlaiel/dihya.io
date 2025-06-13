@@ -1,12 +1,22 @@
-# helpers/README.md
+# README – Module Threed
 
-Ce dossier contient les helpers RBAC :
-- `rbac_helper.js` / `rbac_helper.py` : helpers principaux (validation, mapping)
-- `rbac_helper.test.js` / `rbac_helper.test.py` : tests unitaires
-- `__init__.js` / `__init__.py` : points d’entrée
-- `__init__.test.js` / `__init__.test.py` : tests d’import
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-Bonnes pratiques :
-- Un helper = une fonction réutilisable, testée, documentée
-- Synchroniser JS/Python
-- Documenter chaque ajout
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
+
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

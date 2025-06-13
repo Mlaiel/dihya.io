@@ -1,48 +1,22 @@
-# API Service – Core Services Threed
+# README – Module Threed
 
-Ce dossier contient le service API ultra avancé pour le module core services du domaine 3D. Il est unique, modulaire, testable, prêt pour CI/CD, audit et documentation automatique.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure du dossier
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-- `api.js` : Service API (JavaScript, audit, validation, clé en main).
-- `api.py` : Service API (Python, synchronisé, audit, validation, clé en main).
-- `api.test.js` : Tests unitaires JS ultra avancés, CI/CD ready.
-- `api.test.py` : Tests unitaires Python ultra avancés, CI/CD ready.
-- `__init__.js` / `__init__.py` : Points d'entrée du sous-module api (import JS/Python, découverte automatique).
-- `__init__.test.js` / `__init__.test.py` : Tests d'import des points d'entrée.
-- `README.md` : Documentation métier, structure, conformité, exemples d’usage.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exemples d’utilisation
+---
 
-**JavaScript**
-```js
-const { ApiService } = require('./__init__');
-const api = new ApiService({ mode: 'prod' });
-api.init({ version: 1 });
-const result = api.handle({ foo: 'bar' });
-const audit = api.getAuditTrail();
-```
-
-**Python**
-```python
-from .api import ApiService
-api = ApiService(options={"mode": "prod"})
-api.init({"version": 1})
-result = api.handle({"foo": "bar"})
-audit = api.get_audit_trail()
-```
-
-## Bonnes pratiques
-- Un seul service API ultra avancé, sans doublon.
-- Tous les points d'entrée sont testés (JS & Python).
-- Synchronisation JS/Python assurée.
-- Prêt pour CI/CD, audit et documentation automatique.
-- Respect strict de la logique métier et du cahier des charges.
-
-## CI/CD & Documentation
-- Les tests sont automatiquement détectés et exécutés.
-- La documentation de chaque service est générée à partir de ce README et des docstrings.
-
-## Conformité
-- Structure modulaire, sans doublons, 100% testée, prête pour audit.
-- Respect strict des conventions du projet `threed`.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

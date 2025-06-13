@@ -1,38 +1,22 @@
-<!-- filepath: /workspaces/dihya.io/backend/components/metiers/threed/api/hooks/README.md -->
-# Dossier hooks/ – Hooks métier API Threed
+# README – Module Threed
 
-Ce dossier contient les hooks JS & Python et leurs tests.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure modulaire professionnelle
-- `hooks.js` / `hooks.py` : hooks avant/après action, audit, RGPD, accessibilité
-- `hooks.test.js` / `hooks.test.py` : tests unitaires et d’intégration
-- `__init__.js` / `__init__.py` : points d’entrée modulaires
-- `__init__.test.js` / `__init__.test.py` : tests d’intégration des points d’entrée
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques & conformité
-- Synchroniser la logique hooks JS/Python
-- Hooks audités, extensibles, auditabilité, logs
-- Intégration à la CI/CD et à l’audit global
-- Aucun code métier dans les points d’entrée : tout doit passer par les helpers
-
-## Exemples d’utilisation
-
-### JS
-```js
-const { beforeAction, afterAction } = require('./hooks');
-beforeAction('read', { id: 1 });
-```
-
-### Python
-```python
-from .hooks import before_action, after_action
-before_action('read', {'id': 1})
-```
-
-## Tests & CI/CD
-- Chaque hook est testé unitairement et en intégration
-- Les tests sont synchronisés JS/Python et intégrés à la CI/CD
-- Toute modification déclenche l’audit automatique
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
-Pour toute question, voir le README principal du module ou contacter l’équipe métier Threed.
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

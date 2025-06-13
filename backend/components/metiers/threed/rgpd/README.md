@@ -1,21 +1,22 @@
-# RGPD – Dihya Threed
+# README – Module Threed
 
-## Objectif
-Ce module centralise toutes les fonctionnalités, scripts, helpers et tests liés à la conformité RGPD pour le métier Threed. Il respecte la logique métier, la structure modulaire, l’auto-discovery, la documentation automatique, l’intégration CI/CD, la synchronisation JS/Python, et le cahier des charges Dihya.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `core/` : Fonctions cœur RGPD
-- `helpers/` : Helpers RGPD
-- `samples/` : Exemples et jeux de données RGPD
-- `tests/` : Tests ultra avancés, parité JS/Python, auto-discovery
-- `__init__.js` et `__init__.py` : Initialisation et auto-découverte
-- `index.js` : Exécution centralisée RGPD JS
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exécution
-- **JS** : `node index.js` ou via pipeline CI
-- **Python** : `pytest` dans `tests/` ou via pipeline CI
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## CI/CD
-- Intégration complète dans les pipelines existants
-- Synchronisation automatique JS/Python
-- Documentation et auditabilité incluses
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

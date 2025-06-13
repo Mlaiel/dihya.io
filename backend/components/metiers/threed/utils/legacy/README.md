@@ -1,19 +1,22 @@
-# Module Legacy – Threed Utils
+# README – Module Threed
 
-## Structure
-- `core/`, `fallback/`, `helpers/`, `samples/` : sous-modules synchronisés avec les tests centralisés.
-- `__init__.js`, `__init__.py` : initialisation, auto-discovery, synchronisation JS/Python.
-- `index.js` : centralisation des exports legacy.
-- `.keep` : versionnement des dossiers vides.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Exécution & CI/CD
-- Exécution modulaire, auto-discovery, intégration continue.
-- Synchronisation automatique avec les tests centralisés.
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Logique métier
-- Fonctions legacy, helpers, fallback, samples, routes, imports/exports modulaires.
-- Respect strict du cahier des charges Threed.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Conventions
-- Documentation à chaque niveau.
-- Structure modulaire, évolutive, clé en main.
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

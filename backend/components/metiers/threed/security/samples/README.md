@@ -1,28 +1,22 @@
-# samples/
+# README – Module Threed
 
-Exemples avancés de sécurité, organisés par sous-dossier thématique :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `access/` : Exemples d’accès
-- `audit/` : Exemples d’audit
-- `compliance/` : Exemples de conformité
-- `helpers/` : Exemples d’aides (logger, utils)
-- `monitoring/` : Exemples de monitoring (alerts, grafana, prometheus)
-- `policy/` : Exemples de politiques
-- `rbac/` : Exemples RBAC (engine, permissions, roles)
-- `rgpd/` : Exemples RGPD
-- `scripts/` : Exemples de scripts (audit, backup, compliance, restore)
-- `validators/` : Exemples de validation (input, rgpd)
-- `index.js` : Point d’entrée principal JS
-- `doc.md` : Documentation détaillée
-- `__init__.js`, `__init__.py` : points d’entrée
-- `.keep` : versionnement du dossier
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient :
-- Exemples de code (JS, PY, SH, YAML, JSON)
-- README explicatif
-- Fichiers d’initialisation (`__init__.js`, `__init__.py`, `index.js`)
-- Fichier `.keep` pour le versionnement
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Bonnes pratiques
-- Ajouter tout nouvel exemple dans le sous-dossier thématique approprié.
-- Documenter chaque exemple et fournir des cas d’usage réels.
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

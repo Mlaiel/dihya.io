@@ -1,39 +1,22 @@
-# Legacy Threed
+# README – Module Threed
 
-Ce module regroupe tous les composants legacy du domaine 3D, avec une structure modulaire, des points d'entrée harmonisés et des tests exhaustifs.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure du dossier
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-- `index.js` : Point d'entrée principal JS, centralise l'accès à tous les sous-modules legacy (core, fallback, helpers).
-- `index.test.js` : Test d'import du point d'entrée JS.
-- `index.test.py` : Test d'import du point d'entrée Python.
-- `__init__.js` / `__init__.py` : Points d'entrée pour la découverte automatique (JS/Python).
-- `__init__.test.js` / `__init__.test.py` : Tests d'import des points d'entrée.
-- `core/` : Composants legacy principaux.
-- `fallback/` : Fallbacks legacy et gestion des cas limites.
-- `helpers/` : Helpers legacy (avec leur propre structure modulaire).
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exemples d'utilisation
+---
 
-```js
-const legacy = require('./index');
-legacy.legacyHelper(...);
-```
-
-```python
-from backend.components.metiers.threed.legacy import ...
-```
-
-## Bonnes pratiques
-- Tous les points d'entrée sont testés (JS & Python).
-- Synchronisation JS/Python assurée.
-- Prêt pour CI/CD, audit et documentation automatique.
-- Respect strict de la logique métier et du cahier des charges.
-
-## CI/CD & Documentation
-- Les tests sont automatiquement détectés et exécutés.
-- La documentation est générée à partir de ce README et des docstrings.
-
-## Conformité
-- Structure modulaire, sans doublons, 100% testée, prête pour audit.
-- Respect strict des conventions du projet `threed`.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

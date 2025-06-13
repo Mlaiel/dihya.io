@@ -1,12 +1,22 @@
-# core
+# README – Module Threed
 
-Ce dossier contient la logique métier principale du module i18n :
-- `i18n.js` / `i18n.py` : logique métier i18n
-- `i18n.test.js` / `i18n.test.py` : tests unitaires associés
-- `__init__.js` / `__init__.py` : points d'entrée modulaires (JS & Python)
-- `__init__.test.js` / `__init__.test.py` : tests d'import et de conformité
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-Bonnes pratiques :
-- Garder ce dossier centré sur le cœur métier (pas de helpers ici)
-- Respecter la structure modulaire, la synchronisation JS/Python et la conformité CI/CD
-- Ajouter un README par logique complexe si besoin
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
+
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

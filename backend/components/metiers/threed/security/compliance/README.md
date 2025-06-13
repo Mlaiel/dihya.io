@@ -1,31 +1,22 @@
-# Compliance & RGPD – Sécurité 3D
+# README – Module Threed
 
-Ce dossier contient :
-- Sous-modules professionnels : anonymisation, purge, checklists, policies, samples
-- Scripts d’anonymisation et de purge RGPD (voir sous-dossiers)
-- Checklists et politiques RGPD (voir sous-dossiers)
-- Exemples ultra avancés clé en main (samples)
-- **Fichier `index.js` : Point d’entrée modulaire pour tous les modules JS (anonymisation, purge, checklists, policies, samples)**
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure professionnelle
-- `anonymisation/` : scripts d’anonymisation RGPD (JS, Python)
-- `purge/` : scripts de purge RGPD (JS, Bash)
-- `checklists/` : checklists RGPD (JS, Markdown)
-- `policies/` : politiques de sécurité (JS, Markdown)
-- `samples/` : exemples ultra avancés clé en main (politiques, checklists, etc.)
-- `index.js` : Import modulaire de tous les modules JS de compliance
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation
-
-Import JS modulaire :
-```js
-const { anonymisation, purge, checklists, policies, samples } = require('./compliance');
-// anonymisation.<...>, purge.<...>, checklists.<...>, policies.<...>, samples.policies, ...
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-# Compliance & RGPD – 3D Security (EN)
-
-This folder contains anonymisation, purge, checklists, policies, and ultra-advanced samples for RGPD/3D security compliance. The `index.js` file provides a modular JS entry point for all compliance modules.
-See subfolders for details.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

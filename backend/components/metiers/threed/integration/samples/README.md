@@ -1,14 +1,22 @@
-# Dossier `samples` – Intégration Threed (ultra avancé, clé en main)
+# README – Module Threed
 
-Ce dossier est dédié aux exemples ultra avancés, inclusifs, multi-langues, extensibles, pour démontrer l'intégration, l'orchestration, l'audit, la RGPD, l'accessibilité, la documentation et la persistance des intégrations Threed.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Placez ici des exemples transverses, des configurations complètes, des scripts d'orchestration, ou des cas d'usage multi-intégration.
-- Prêt pour l'industrialisation, l'audit, la CI/CD, la documentation, l'extension et l'intégration continue.
-- `.keep` pour la persistance du dossier.
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Structure recommandée :
-- `README.md` (ce fichier)
-- `.keep`
-- `example_integration_orchestration.py` / `.js` (exemple clé en main)
-- `DOCS.md` (documentation métier)
-- `__init__.py`, `__init__.js` (import/export dynamique, auto-discovery)
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

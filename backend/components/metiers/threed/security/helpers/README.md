@@ -1,41 +1,22 @@
-# Utilitaires sécurité – Security Helpers 3D
+# README – Module Threed
 
-Ce dossier contient :
-- Fonctions utilitaires pour la sécurité (hash, génération de tokens, validation email, etc.)
-- Helpers pour logs, audit, conformité
-- Exemples d’utilisation dans le code métier
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Exemples de fichiers à inclure
-- hash_utils.py
-- token_generator.py
-- email_validator.py
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques
-- Centraliser les helpers pour éviter la duplication
-- Tester chaque helper sur des cas limites
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-# Security Helpers (EN)
-
-This folder contains security utility functions and helpers for audit, logging, and compliance.
-
-# helpers/
-
-Ce dossier regroupe les helpers de sécurité :
-- `logger/` : helpers de logging (Node.js, Python)
-- `utils/` : helpers utilitaires (Node.js, Python)
-- `samples/` : exemples avancés d’utilisation des helpers (logger, utils)
-
-Chaque sous-dossier contient :
-- Les scripts principaux
-- Un README explicatif
-- Les fichiers d’initialisation (`__init__.js`, `__init__.py`)
-- Un fichier `.keep` pour le versionnement
-
-Le point d’entrée principal du module est `index.js`.
-
-## Bonnes pratiques
-- Ajouter tout nouveau helper ou exemple dans le sous-dossier approprié.
-- Documenter chaque helper et fournir des exemples d’utilisation.
-- Ajouter des tests unitaires pour chaque helper.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

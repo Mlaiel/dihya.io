@@ -1,6 +1,6 @@
 // threed_controller.js – Contrôleur ultra avancé API Threed (JS)
 const db = require('../db/db');
-const { validate3dEntity } = require('../validators/validators');
+const { validatethreedEntity } = require('../validators/validators');
 const { auditEntity } = require('../audit/audit');
 const { rgpdSanitize } = require('../rgpd/rgpd');
 const { checkAccessibility } = require('../accessibility/accessibility');
@@ -19,7 +19,7 @@ const ThreedController = {
   },
   async create(data) {
     beforeAction('create', data);
-    validate3dEntity(data);
+    validatethreedEntity(data);
     const created = db.insert('threed', data);
     auditEntity(created, 'create');
     afterAction('create', created);
@@ -27,7 +27,7 @@ const ThreedController = {
   },
   async update(id, data) {
     beforeAction('update', { id, ...data });
-    validate3dEntity(data);
+    validatethreedEntity(data);
     const updated = db.update('threed', id, data);
     auditEntity(updated, 'update');
     afterAction('update', updated);

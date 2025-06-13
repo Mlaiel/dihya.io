@@ -1,38 +1,22 @@
-# fixtures (racine)
+# README – Module Threed
 
-Ce dossier regroupe toutes les fixtures ultra avancées pour le module Threed (JS & Python), organisées par logique métier et selon le cahier des charges Dihya.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure (mise à jour 2025)
-- `core/` : modèles, générateurs, samples, tests (structure ultra modulaire)
-- `helpers/` : helpers, validators, samples, tests (organisation claire par rôle, synchronisation JS/Python, conformité RGPD, accessibilité, audit, CI/CD)
-- `mocks/` : mocks principaux, samples, tests (pour la simulation et le test avancé)
-- `services/` : services métiers pour l'environnement de fixtures (core, tests)
-- `__init__.py` / `__init__.js` : points d'entrée globaux pour import direct (fusion core/helpers)
-- `index.js` / `index.py` : points d'entrée principaux (fusionne tous les sous-modules)
-- `index.test.js` / `index.test.py` : tests d'intégration globaux (JS & Python)
-- `README_ADVANCED.md` / `README_UNITTESTS.md` : documentation avancée et guide de tests
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d'utilisation (synchronisés)
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-### Python
-```python
-from .core import ...
-from .helpers import ...
-from .mocks import ...
-from .services import ...
-```
+---
 
-### JavaScript
-```js
-const fixtures = require('./index');
-const model = fixtures.sample3DModel;
-const helper = fixtures.getModelById;
-const mock = fixtures.fixtures_mock;
-const service = fixtures.getEnvironnement;
-```
-
-## Conformité & bonnes pratiques
-- Respecte la logique métier 3D avancée et le cahier des charges Dihya
-- Compatible avec les outils de test, CI/CD, audit et documentation automatique
-- Structure modulaire, évolutive, prête pour l’industrialisation
-- Synchronisation stricte JS/Python, conformité RGPD/accessibilité, auditabilité
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

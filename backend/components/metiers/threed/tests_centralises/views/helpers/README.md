@@ -1,9 +1,22 @@
-# Tests avancés – Views Helpers
+# README – Module Threed
 
-Ce dossier contient les tests ultra avancés pour le module métier `views/helpers` (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Respecte la logique métier et le cahier des charges
-- Prêt à être répliqué sur d’autres modules
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Découverte automatique & CI/CD
-- Les fichiers d'initialisation (__init__.js, __init__.py) permettent la découverte automatique des tests et l'intégration dans les pipelines CI/CD.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

@@ -1,12 +1,22 @@
-# input/
+# README – Module Threed
 
-Ce dossier contient les validateurs relatifs à la validation des entrées utilisateur (input).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `input_validator.js` : Validateur d’input côté Node.js
-- `input_validator.py` : Validateur d’input côté Python
-- `__init__.js`, `__init__.py` : points d’entrée
-- `.keep` : versionnement du dossier
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques
-- Centraliser toute la logique de validation d’input ici.
-- Ajouter des tests unitaires pour chaque validateur.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

@@ -1,25 +1,22 @@
-# Politiques d’accès – Documentation avancée
+# README – Module Threed
 
-Ce dossier regroupe toutes les politiques d’accès (FR/EN), la logique métier, les scripts JS/Python, et la documentation professionnelle.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `POLICY_ACCESS_FR.md` : Politique d’accès (FR)
-- `POLICY_ACCESS_EN.md` : Access Policy (EN)
-- `policies.js` : Fonctions métier, helpers et exports JS pour la gestion des accès
-- `policies.py` : Fonctions métier, helpers et exports Python pour la gestion des accès
-- `__init__.js` : Point d’entrée JS du module d’accès
-- `__init__.py` : Point d’entrée Python du module d’accès
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation JS
-```js
-import { getAccessPolicy, setAccessPolicy } from './policies.js';
-```
-
-## Utilisation Python
-```python
-from .policies import get_access_policy, set_access_policy
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Structure modulaire, claire, conforme au cahier des charges et à la logique métier.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

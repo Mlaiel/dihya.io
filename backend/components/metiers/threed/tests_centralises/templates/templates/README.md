@@ -1,18 +1,22 @@
-# templates – Templates HTML/Jinja2 (clé en main, ultra avancé)
+# README – Module Threed
 
-Ce dossier contient les templates HTML/Jinja2 et helpers associés pour Threed :
-- Templates, helpers, tests, extension dynamique
-- Synchronisation JS/Python, conformité RGPD, accessibilité, auditabilité
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `advanced_report.html`, `advanced_report.j2`, `compliance_template.html`, `compliance_template.j2`, etc.
-- `templates_helpers.test.js` / `templates_helpers.test.py` : tests unitaires
-- `index.js`, `__init__.js`, `__init__.py` : points d’entrée modulaires, synchronisation, conformité
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques
-- Garder ce dossier centré sur les templates et helpers associés
-- Typage, documentation, tests, robustesse, conformité, traçabilité
-- Ajouter un README par logique complexe si besoin
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Extension
-Pour toute extension, ajoutez un template ou helper dédié, tests et documentation associés.
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

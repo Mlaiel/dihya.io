@@ -1,29 +1,22 @@
-# Tests Centralisés JS – Module Threed Utils
+# README – Module Threed
 
-## Structure du dossier
-- `core/`, `fallback/`, `helpers/`, `samples/` : sous-modules synchronisés avec `/utils/js`.
-- `__init__.js`, `__init__.py` : initialisation, auto-discovery, synchronisation JS/Python.
-- `index.js` : exécution centralisée des tests JS.
-- `.keep` : versionnement des dossiers vides.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Exécution des tests
-- JS : `npm test` ou via `index.js` (auto-import de tous les tests du module).
-- Python : `pytest` (pour la parité et la couverture croisée).
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## CI/CD & Synchronisation
-- Intégration continue avec scripts de test JS/Python.
-- Synchronisation automatique de la structure avec `/utils/js`.
-- Documentation et conventions à jour.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Logique métier
-- Tests exhaustifs des helpers, core, fallback, samples JS.
-- Respect des imports/exports modulaires, logique métier Threed.
+---
 
-## Imports/Exports
-- Tous les tests sont auto-importés via `index.js`.
-- Exports centralisés pour intégration CI/CD et reporting.
-
-## Conventions
-- Parité stricte JS/Python.
-- Documentation à chaque niveau.
-- Structure modulaire, évolutive, clé en main.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

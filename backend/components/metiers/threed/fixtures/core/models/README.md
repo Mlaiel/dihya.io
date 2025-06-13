@@ -1,27 +1,22 @@
-# Dossier models (fixtures/core/models)
+# README – Module Threed
 
-Ce dossier regroupe toutes les fixtures statiques ultra avancées pour le module Threed, en Python et JavaScript. Il répond à la logique métier 3D et au cahier des charges Dihya.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `fixtures.js` : Modèles, assets, utilisateurs, scènes (JavaScript)
-- `fixtures.py` : Modèles, assets, utilisateurs, scènes (Python)
-- `sample_fixture.js` : Exemple de fixture minimaliste (JavaScript)
-- `sample_fixture.py` : Exemple de fixture minimaliste (Python)
-- `__init__.js` / `__init__.py` : Points d'entrée pour import direct des fixtures
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d'utilisation
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-### JavaScript
-```js
-const { sample3DModel, assets, users, sample } = require('./models');
-```
+---
 
-### Python
-```python
-from .models import sample_3d_asset, advanced_3d_model, asset_texture, user_admin
-```
-
-## Conformité
-- Respecte la logique métier 3D avancée
-- Compatible avec les outils de test et d'intégration continue
-- Prêt pour l'audit et la documentation automatique
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

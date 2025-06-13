@@ -1,22 +1,22 @@
-# legacy/core/samples
+# README – Module Threed
 
-Exemples et tests avancés pour le module legacy/core (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `sample_legacy.py` / `sample_legacy.js` : exemples d’utilisation legacy
-- `sample_legacy.test.py` / `sample_legacy.test.js` : tests unitaires
-- `__init__.py` / `__init__.js` : points d’entrée modulaires synchronisés
-- `__init__.test.py` / `__init__.test.js` : tests d’import des points d’entrée
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d’utilisation
-Voir les fichiers pour des exemples legacy JS & Python.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Conformité & CI/CD
-- 100% testé (unitaires, import, audit)
-- Prêt pour audit, documentation automatique, CI/CD
-- Synchronisation stricte JS/Python
+---
 
-## Bonnes pratiques
-- Utiliser les points d’entrée (`__init__`) pour importer les exemples legacy
-- Respecter la structure modulaire pour faciliter la maintenance, l’audit et la documentation
-- Mettre à jour la documentation à chaque évolution majeure
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

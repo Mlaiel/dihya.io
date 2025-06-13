@@ -1,24 +1,22 @@
-# README – Tests ultra avancés pour legacy/samples
+# README – Module Threed
 
-Ce dossier est destiné à accueillir tous les tests unitaires, d’intégration et de conformité pour legacy/samples (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Respecte la logique métier, la structure modulaire et le cahier des charges Dihya.
-- Synchronisation JS/Python, documentation automatique, auditabilité CI/CD.
-- À compléter avec des sous-dossiers ou fichiers de tests avancés.
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-# legacy/samples
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Structure et logique
-Ce dossier contient les tests ultra avancés pour les samples legacy. Il assure la parité JS/Python, l’auto-discovery, et l’intégration CI/CD.
+---
 
-- Découverte automatique via `__init__.js` et `__init__.py`
-- Tests synchronisés JS (`sample_legacy.test.js`) et Python (`sample_legacy.test.py`)
-- Documentation et structure clé en main
-
-## Exécution
-- **JS** : Utiliser `npm test` ou exécuter via l’`index.js` parent
-- **Python** : `pytest`
-
-## CI/CD
-- Intégration complète dans les pipelines existants
-- Synchronisation automatique JS/Python
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

@@ -1,45 +1,22 @@
-# Dossier controllers/ – Contrôleurs métier API Threed
+# README – Module Threed
 
-Ce dossier contient les contrôleurs principaux JS & Python pour l’API Threed.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure modulaire professionnelle
-- `threed_controller.js` / `threed_controller.py` : logique métier, RGPD, audit, accessibilité, hooks, edge cases
-- `threed_controller.test.js` / `threed_controller.test.py` : tests unitaires et d’intégration synchronisés JS/Python
-- `__init__.js` / `__init__.py` : points d’entrée modulaires, exposant explicitement les méthodes du contrôleur
-- `__init__.test.js` / `__init__.test.py` : tests d’intégration des points d’entrée
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques & conformité
-- Séparer la logique métier, les hooks, l’audit, la RGPD, l’accessibilité
-- Synchronisation JS/Python : toute logique métier doit exister dans les deux langages
-- Documentation et typage de chaque helper et test
-- Intégration à la CI/CD et à l’audit global (tests automatiques, auditabilité, logs)
-- Aucun code métier dans les points d’entrée : tout doit passer par les helpers ou contrôleurs
-
-## Exemples d’utilisation
-
-### JS
-```js
-const { getById, create, update, delete: del } = require('./threed_controller');
-const entity = await getById(1);
-const created = await create({ name: 'Test', status: 'active', label: 'Test' });
-```
-
-### Python
-```python
-from .threed_controller import get_threed, create_threed
-entity = get_threed(1)
-created = create_threed({'name': 'Test', 'status': 'active', 'label': 'Test'})
-```
-
-## Tests & CI/CD
-- Chaque méthode est testée unitairement et en intégration (voir fichiers `.test.js` et `.test.py`)
-- Les tests sont synchronisés JS/Python et intégrés à la CI/CD
-- Toute modification déclenche l’audit automatique
-
-## Audit & extension
-- Ce module est auditable, extensible, et conforme aux exigences métier Threed
-- Pour toute extension, ajouter le contrôleur dans `threed_controller.js`/`.py` et l’exposer dans `__init__`
-- Voir guides RGPD, audit, conformité dans le dossier `guides/` du projet
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
-Pour toute question, voir le README principal du module ou contacter l’équipe métier Threed.
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

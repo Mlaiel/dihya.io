@@ -1,17 +1,17 @@
-/* global render3DTemplate */
+/* global renderthreedTemplate */
 // template_3reed.js - Exemple de template JS pour threed
 // Fichier renommé : template_threed.js (conformité métier)
 // Toutes les fonctions, exports et documentations utilisent 'threed' pour la conformité métier.
 
 /**
- * Rendu ultra avancé d’un template 3D (clé en main, conforme CDC Dihya)
- * @param {Object} data - Données du modèle 3D (id, name, meta, audit, access, format, i18n, etc.)
+ * Rendu ultra avancé d’un template threed (clé en main, conforme CDC Dihya)
+ * @param {Object} data - Données du modèle threed (id, name, meta, audit, access, format, i18n, etc.)
  * @param {Object} [options] - Options avancées (audit, hooks, accessibilité, RGPD, etc.)
  * @returns {string}
  */
-function render3DTemplateUltra(data, options = {}) {
-  if (!data || !data.id || !data.name) throw new Error('Modèle 3D invalide');
-  let output = `Modèle 3D: ${data.name} (ID: ${data.id})`;
+function renderthreedTemplateUltra(data, options = {}) {
+  if (!data || !data.id || !data.name) throw new Error('Modèle threed invalide');
+  let output = `Modèle threed: ${data.name} (ID: ${data.id})`;
   if (data.meta) output += `\nMeta: ${JSON.stringify(data.meta)}`;
   if (options.audit) output += `\nAudit: ${options.audit}`;
   if (options.accessibility) output += `\nAccessibilité: ${options.accessibility}`;
@@ -25,9 +25,9 @@ function render3DTemplateUltra(data, options = {}) {
 }
 
 /**
- * Validation ultra avancée d’un modèle 3D (CDC, RGPD, accessibilité, sécurité)
+ * Validation ultra avancée d’un modèle threed (CDC, RGPD, accessibilité, sécurité)
  */
-function validate3DTemplateUltra(data) {
+function validatethreedTemplateUltra(data) {
   if (!data || typeof data !== 'object') return false;
   if (!data.id || !data.name) return false;
   if (data.rgpd && data.rgpd !== 'ok') return false;
@@ -40,7 +40,7 @@ function validate3DTemplateUltra(data) {
  */
 
 module.exports = {
-  render3DTemplate,
-  render3DTemplateUltra,
-  validate3DTemplateUltra
+  renderthreedTemplate,
+  renderthreedTemplateUltra,
+  validatethreedTemplateUltra
 };

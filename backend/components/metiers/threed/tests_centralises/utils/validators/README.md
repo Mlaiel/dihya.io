@@ -1,13 +1,22 @@
-# validators – Utils (tests ultra avancés)
+# README – Module Threed
 
-Ce dossier centralise tous les sous-modules de tests pour les validators : core, fallback, helpers, samples.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `index.js` : point d’entrée unique, auto-discovery, exports dynamiques JS
-- `core/` : tests avancés pour les validators core
-- `fallback/` : tests avancés pour les validators fallback
-- `helpers/` : tests avancés pour les helpers de validation
-- `samples/` : tests avancés pour les samples de validation
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient des tests ultra avancés, clé en main, et une initialisation continue.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-Respect du cahier des charges, logique métier (tests uniquement), modularité, documentation à chaque niveau, extension facile, CI/CD ready.
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

@@ -1,29 +1,22 @@
-# README – Guides techniques sécurité 3D
+# README – Module Threed
 
-Ce dossier contient des guides ultra avancés, séparés par thématique métier :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `api/` : intégration API sécurité (auth, RBAC, audit, conformité, monitoring)
-- `rbac/` : gestion des accès, modèles de rôles, bonnes pratiques
-- `audit/` : journalisation, rapports, alertes
-- `compliance/` : conformité RGPD, checklists, scripts
-- `monitoring/` : surveillance, alerting, dashboards
-- `onboarding/` : intégration nouveaux devs, checklist sécurité
-- `faq/` : questions fréquentes, liens utiles
-- `samples/` : exemples ultra avancés, snippets, cas d’usage pour chaque guide
-- `index.js` : point d’entrée modulaire pour tous les guides JS
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation
-
-Import JS modulaire :
-```js
-const { api, audit, compliance, monitoring, onboarding, rbac, faq, samples } = require('./guides');
-// api.getApiIntegrationGuide(), audit.getAuditGuide(), ...
-```
-
-Chaque sous-dossier contient le guide principal, des exemples, et des ressources complémentaires, prêts à l’emploi ou à l’extension.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-# 3D Security Technical Guides (EN)
-
-This folder contains advanced, business-oriented guides, separated by topic for clarity and direct use. The `index.js` file provides a modular JS entry point for all guides.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

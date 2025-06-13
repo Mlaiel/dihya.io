@@ -1,10 +1,22 @@
-# core
+# README – Module Threed
 
-Ce dossier contient les helpers principaux et leur logique métier :
-- `utils_helper.js` / `utils_helper.py` : helpers principaux
-- `utils.py` : helpers Python principaux
-- `utils_helper.test.js` / `utils_helper.test.py` : tests unitaires associés
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-Bonnes pratiques :
-- Garder ce dossier centré sur les helpers principaux (pas de fallback ici)
-- Ajouter un README par helper complexe si besoin
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
+
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
+
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

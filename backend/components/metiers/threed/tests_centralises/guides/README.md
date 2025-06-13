@@ -1,21 +1,22 @@
-# README – Tests ultra avancés pour guides
+# README – Module Threed
 
-Ce dossier regroupe tous les tests unitaires, d’intégration et de conformité pour guides (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Découverte automatique via `__init__.js` et `__init__.py`
-- Exécution centralisée via `index.js` (à créer si besoin)
-- Synchronisation JS/Python, documentation automatique, CI/CD ready
-- Respecte la logique métier et le cahier des charges Dihya
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Structure
-- Tous les sous-dossiers doivent contenir des tests `.test.js` et `.test.py`.
-- Les fichiers d’initialisation assurent l’auto-discovery et l’exécution centralisée.
-- Les sous-modules : core (accessibility, fixtures, plugins, samples, services, utils, views)
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exécution
-- JS : utiliser l’index.js ou les runners de test (Jest, Mocha, etc.)
-- Python : utiliser pytest ou un runner compatible.
+---
 
-## CI/CD
-- Intégration continue prête à l’emploi, synchronisation JS/Python assurée.
-- Documentation générée automatiquement à chaque niveau.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

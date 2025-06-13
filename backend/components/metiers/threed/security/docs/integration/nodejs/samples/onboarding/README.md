@@ -1,17 +1,22 @@
-# Exemples d’intégration Onboarding (Node.js)
+# README – Module Threed
 
-Ce dossier contient des exemples avancés pour l’intégration du module Onboarding côté Node.js et Python.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Exemple Node.js
-```js
-import { onboardingHello } from '../../onboarding/onboarding_helper.js';
-console.log(onboardingHello());
-```
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemple Python
-```python
-from ...onboarding.onboarding_helper import onboarding_nodejs_hello
-print(onboarding_nodejs_hello())
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-> Ajoutez ici des scénarios d’onboarding, des tests, ou des cas d’usage avancés.
+---
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

@@ -1,32 +1,22 @@
-# core – JS Ultra Avancé (clé en main)
+# README – Module Threed
 
-Ce dossier contient la logique métier principale du module JS pour Threed : fonctions utilitaires globales, robustes, testées et prêtes pour CI/CD, audit et documentation automatique.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure du sous-module
-- `js_core.js` : fonctions métier JS critiques (ex : validation, typage, manipulation d’objets)
-- `js_core.test.js` : tests unitaires avancés (edge cases, robustesse, conformité)
-- `__init__.js` : point d’entrée modulaire (import global, CI/CD, audit)
-- `__init__.test.js` : test d’import du point d’entrée (conformité, audit)
-- `README.md` : documentation avancée, exemples, bonnes pratiques
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d’utilisation
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-```js
-const { isPlainObject } = require('./js_core');
-console.log(isPlainObject({ a: 1 })); // true
-console.log(isPlainObject([1,2,3])); // false
-```
+---
 
-## Synchronisation & CI/CD
-- Toutes les fonctions sont testées (unitaires, edge cases)
-- Point d’entrée unique pour import modulaire et audit
-- Prêt pour intégration continue (CI/CD) et documentation automatique
-
-## Bonnes pratiques
-- Garder ce dossier centré sur le cœur métier JS (pas de helpers/fallback ici)
-- Chaque fonction : typée, documentée, testée, robuste
-- Ajouter un README par logique complexe si besoin
-- Respecter la conformité, la traçabilité et la logique métier
-
-## Extension
-Pour toute extension, créez un fichier dédié par logique métier JS, ajoutez tests et documentation associés.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

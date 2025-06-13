@@ -1,20 +1,22 @@
-# Scripts — Organisation des tests centralisés
+# README – Module Threed
 
-Ce dossier regroupe tous les tests d’exemples (samples) pour les scripts d’automatisation, organisés par sous-dossier métier :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `audit/` : scripts d’audit
-- `backup/` : scripts de sauvegarde
-- `compliance/` : scripts de conformité
-- `restore/` : scripts de restauration
-- `index.js` : point d’entrée centralisé ultra avancé pour tous les tests de scripts (import dynamique, exports clé en main, métadonnées, CI/CD ready)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient les fichiers de tests correspondants, prêts à être exécutés ou intégrés dans les pipelines CI/CD.
-
-## Logique avancée
-- Tous les modules sont importés dynamiquement via `index.js`.
-- Métadonnées métier, couverture, auteur, date de mise à jour incluses dans chaque module.
-- Structure clé en main, extensible, conforme au cahier des charges Dihya.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-*Ajoutez ici tout nouveau test script en respectant la structure et la logique métier. Dernière mise à jour : 2025-06-08.*
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

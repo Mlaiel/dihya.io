@@ -1,7 +1,7 @@
 # Templates Threed – Documentation Ultra Avancée
 
 Ce dossier contient :
-- Templates Jinja2, HTML, JSON, XML, JS pour tous les usages métier 3D (audit, notification, accessibilité, export, SEO, etc.)
+- Templates Jinja2, HTML, JSON, XML, JS pour tous les usages métier threed (audit, notification, accessibilité, export, SEO, etc.)
 - Exemples d’utilisation, bonnes pratiques, hooks, sécurité, CI/CD, edge cases
 - Synchronisation JS/Python assurée
 
@@ -36,7 +36,7 @@ console.log(rapport.replace('{{ date }}', '2025-06-03').replace('{{ result }}', 
 
 ## Structure recommandée
 - `sample_template.html.j2` : base pour tout nouveau template
-- `rapport_audit.html.j2` : audit 3D
+- `rapport_audit.html.j2` : audit threed
 - `email_notification.html.j2` : notification
 - `accessibilite_audit.json.j2` : audit accessibilité
 - `service_export.json.j2` : export JSON

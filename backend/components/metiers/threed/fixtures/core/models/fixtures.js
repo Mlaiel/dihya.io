@@ -1,7 +1,7 @@
 // fixtures.js - Fixtures ultra avancés pour le module threed
 
 module.exports = {
-  sample3DModel: {
+  samplethreedModel: {
     id: 'model-001',
     name: 'Cube Ultra',
     vertices: [
@@ -14,7 +14,7 @@ module.exports = {
     meta: {
       createdBy: 'test',
       createdAt: new Date().toISOString(),
-      tags: ['cube', 'ultra', '3d'],
+      tags: ['cube', 'ultra', 'threed'],
       validated: true
     }
   },
@@ -38,7 +38,7 @@ module.exports = {
     }
   ],
   errors: [
-    { code: 'ERR_MISSING_VERTEX', message: 'Le modèle 3D est incomplet.' },
+    { code: 'ERR_MISSING_VERTEX', message: 'Le modèle threed est incomplet.' },
     { code: 'ERR_INVALID_ASSET', message: 'Asset non reconnu.' }
   ],
   edgeCases: {

@@ -1,37 +1,22 @@
-# core
+# README – Module Threed
 
-Ce dossier contient la logique métier principale des fixtures :
-- `fixtures.js` / `fixtures.py` : logique métier principale
-- `fixtures.test.js` / `fixtures_mock_test.py` : tests unitaires associés
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-Bonnes pratiques :
-- Garder ce dossier centré sur le cœur métier (pas de helpers, mocks, services ici)
-- Ajouter un README par logique complexe si besoin
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Structure avancée
-- `models/` : Modèles 3D, assets, utilisateurs (clé en main, synchronisés JS/Python)
-- `generators/` : Générateurs de fixtures, tests, edge cases, CI/CD
-- `samples/` : Exemples ultra avancés, edge cases, tests, audit, RGPD, accessibilité
-- Points d'entrée globaux : `__init__.py`, `__init__.js`, `index.js`
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Bonnes pratiques
-- Synchroniser la logique métier et les tests entre JS et Python
-- Couvrir tous les cas métier, edge cases, conformité RGPD, accessibilité, audit, CI/CD
-- Documenter chaque module, sample et point d'entrée
+---
 
-## Exemples d’utilisation
-
-**JavaScript**
-```js
-const core = require('./index');
-core.generateModel('UltraModel', 12, 20);
-```
-
-**Python**
-```python
-from .models import advanced_3d_model
-from .generators import generate_model
-model = generate_model('UltraModel', 12, 20)
-```
-
-> Respecter la logique modulaire, testée, documentée et conforme au cahier des charges Dihya.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

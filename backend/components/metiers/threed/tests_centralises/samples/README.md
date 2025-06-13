@@ -1,25 +1,22 @@
-# Samples — Organisation des tests centralisés
+# README – Module Threed
 
-Ce dossier regroupe tous les tests d’exemples (samples) ultra avancés, organisés par logique métier et sous-dossier dédié :
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `access/` : tests d'accessibilité et de contrôle d'accès
-- `audit/` : tests d'audit, traçabilité, conformité
-- `compliance/` : tests de conformité légale et réglementaire
-- `helpers/` : helpers de tests (logger, utils, etc.)
-- `monitoring/` : tests de monitoring (alerts, grafana, prometheus)
-- `policy/` : tests de politiques de sécurité et de gestion
-- `rbac/` : tests de contrôle d’accès basé sur les rôles
-- `rgpd/` : tests RGPD (conformité, anonymisation, export)
-- `scripts/` : tests de scripts d’automatisation (audit, backup, compliance, restore)
-- `index.js` : point d’entrée centralisé ultra avancé pour tous les tests d’exemples (import dynamique, exports clé en main, métadonnées, CI/CD ready)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient les fichiers de tests correspondants, prêts à être exécutés ou intégrés dans les pipelines CI/CD.
-
-## Logique avancée
-- Tous les modules sont importés dynamiquement via `index.js`.
-- Métadonnées métier, couverture, auteur, date de mise à jour incluses dans chaque module.
-- Structure clé en main, extensible, conforme au cahier des charges Dihya.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-*Ajoutez ici tout nouveau test d’exemple en respectant la structure et la logique métier. Dernière mise à jour : 2025-06-08.*
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

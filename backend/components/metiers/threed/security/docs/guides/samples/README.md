@@ -1,25 +1,22 @@
-# README – Exemples avancés (samples) guides sécurité 3D
+# README – Module Threed
 
-Ce dossier contient des exemples ultra avancés, snippets, et cas d’usage pour chaque guide métier (API, audit, conformité, monitoring, onboarding, RBAC, FAQ).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Exemples d’intégration API (Node.js, Python)
-- Exemples de logs, rapports, checklists, dashboards
-- Snippets réutilisables pour automatisation, conformité, onboarding
-- Organisation par thématique : `api/`, `audit/`, `compliance/`, `monitoring/`, `onboarding/`, `rbac/`, `faq/`
-- `index.js` : point d’entrée modulaire pour tous les samples JS
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation
-
-Import JS modulaire :
-```js
-const { api, audit, compliance, monitoring, onboarding, rbac, faq } = require('./samples');
-// api.sampleApiRequest(), audit.sampleAuditLog(), ...
-```
-
-Chaque sous-dossier contient des exemples avancés, prêts à l’emploi, pour intégration directe ou adaptation à vos besoins métiers.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-# 3D Security Guides – Advanced Samples (EN)
-
-This folder contains advanced samples, snippets, and use cases for each business guide (API, audit, compliance, monitoring, onboarding, RBAC, FAQ). See each subfolder for ready-to-use code and integration guides. The `index.js` file provides a modular JS entry point for all samples.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

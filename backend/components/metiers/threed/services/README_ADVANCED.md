@@ -36,8 +36,8 @@ api.simulateLoadAPI();
 
 ### Python
 ```python
-from .services_threed import get_advanced_3d_model, audit_advanced_model
-print(get_advanced_3d_model('model-003'))
+from .services_threed import get_advanced_threed_model, audit_advanced_model
+print(get_advanced_threed_model('model-003'))
 print(audit_advanced_model({'id': 'model-003', 'meta': {'advanced': True}}))
 ```
 
@@ -51,7 +51,7 @@ print(audit_advanced_model({'id': 'model-003', 'meta': {'advanced': True}}))
 ## Exemples d'utilisation
 
 ```python
-from .mon_service import traitement_3d
+from .mon_service import traitement_threed
 ```
 
 ## Extension

@@ -1,25 +1,22 @@
-# Politiques d’audit – Documentation avancée
+# README – Module Threed
 
-Ce dossier regroupe toutes les politiques d’audit (FR/EN), la logique métier, les scripts JS/Python, et la documentation professionnelle.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `POLICY_AUDIT_FR.md` : Politique d’audit (FR)
-- `POLICY_AUDIT_EN.md` : Audit Policy (EN)
-- `policies.js` : Fonctions métier, helpers et exports JS pour la gestion d’audit
-- `policies.py` : Fonctions métier, helpers et exports Python pour la gestion d’audit
-- `__init__.js` : Point d’entrée JS du module d’audit
-- `__init__.py` : Point d’entrée Python du module d’audit
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Utilisation JS
-```js
-import { getAuditPolicy, setAuditPolicy } from './policies.js';
-```
-
-## Utilisation Python
-```python
-from .policies import get_audit_policy, set_audit_policy
-```
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-> Structure modulaire, claire, conforme au cahier des charges et à la logique métier.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

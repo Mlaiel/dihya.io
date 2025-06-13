@@ -1,22 +1,22 @@
-# plugins – Tests centralisés Threed
+# README – Module Threed
 
-## Structure et logique
-Ce dossier contient uniquement les tests ultra avancés pour les plugins existants dans le module métier Threed. Il respecte la structure réelle : core, helpers, samples. Aucun test ne cible un module inexistant ou non métier.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- Découverte automatique via `__init__.js` et `__init__.py`
-- Parité JS/Python, documentation, CI/CD
-- Respect strict de la logique métier et de la structure réelle du code source
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Structure actuelle
-- `core/` : Tests pour les plugins cœur métier
-- `helpers/` : Tests pour les helpers plugins
-- `samples/` : Tests pour les samples plugins
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exécution
-- **JS** : Utiliser `npm test` ou exécuter via l’`index.js` parent
-- **Python** : `pytest`
+---
 
-## CI/CD
-- Intégration complète dans les pipelines existants
-- Synchronisation automatique JS/Python
-- Aucun test ne cible un module inexistant (ex : plugin_manager)
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

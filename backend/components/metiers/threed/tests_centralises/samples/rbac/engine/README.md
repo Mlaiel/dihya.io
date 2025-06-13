@@ -1,16 +1,22 @@
-# engine/
+# README – Module Threed
 
-Exemples avancés du moteur RBAC pour modules métiers 3D.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `sample_engine.js` : Exemple Node.js
-- `sample_engine.py` : Exemple Python
-- `__init__.js`, `__init__.py` : points d’entrée ultra avancés
-- `.keep` : versionnement du dossier
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-# Engine RBAC — Tests centralisés
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-Ce dossier contient les tests d'exemples pour le moteur RBAC.
-- `tests_engine.py` : tests Python
-- `tests_engine.js` : tests JavaScript
+---
 
-Respecte la logique métier, prêt pour CI/CD.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

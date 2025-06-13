@@ -1,49 +1,22 @@
-# Module accessibilité – API Threed
+# README – Module Threed
 
-Ce dossier regroupe tous les modules, helpers, hooks et tests liés à l’accessibilité pour l’API Threed (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure modulaire professionnelle
-- `accessibility.js` / `accessibility.py` : logique d’accessibilité, vérification, logs, hooks, conformité WCAG/ARIA/RGAA
-- `accessibility.test.js` / `accessibility.test.py` : tests unitaires et d’intégration synchronisés JS/Python
-- `__init__.js` / `__init__.py` : points d’entrée modulaires, exposant explicitement les helpers et hooks
-- `__init__.test.js` / `__init__.test.py` : tests d’intégration des points d’entrée
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Bonnes pratiques & conformité
-- Respect strict des standards WCAG, ARIA, RGAA, RGPD
-- Couverture de tous les endpoints critiques (audit accessibilité, logs, hooks)
-- Synchronisation JS/Python : toute logique métier doit exister dans les deux langages
-- Documentation et typage de chaque helper et test
-- Intégration à la CI/CD et à l’audit global (tests automatiques, auditabilité, logs)
-- Aucun code métier dans les points d’entrée : tout doit passer par les helpers
-
-## Exemples d’utilisation
-
-### JS
-```js
-const { checkAccessibility } = require('./accessibility');
-const entity = { label: 'Bouton valider' };
-if (checkAccessibility(entity)) {
-  // Accessible, log ou suite du traitement
-}
-```
-
-### Python
-```python
-from .accessibility import check_accessibility
-entity = {'label': 'Bouton valider'}
-if check_accessibility(entity):
-    # Accessible, log ou suite du traitement
-```
-
-## Tests & CI/CD
-- Chaque helper est testé unitairement et en intégration (voir fichiers `.test.js` et `.test.py`)
-- Les tests sont synchronisés JS/Python et intégrés à la CI/CD
-- Toute modification déclenche l’audit automatique
-
-## Audit & extension
-- Ce module est auditable, extensible, et conforme aux exigences métier Threed
-- Pour toute extension, ajouter le helper dans `accessibility.js`/`.py` et l’exposer dans `__init__`
-- Voir guides RGPD, accessibilité, audit dans le dossier `guides/` du projet
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
-Pour toute question, voir le README principal du module ou contacter l’équipe métier Threed.
+
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

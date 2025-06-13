@@ -1,31 +1,22 @@
-# mocks
+# README – Module Threed
 
-Ce dossier regroupe tous les mocks ultra avancés pour le module Threed (JS & Python).
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
-- `core/` : mocks principaux (fixtures_mock.py, fixtures.mock.js)
-- `samples/` : fixtures d'exemple pour les mocks (sample_fixture.py, sample_fixture.js)
-- `tests/` : tous les tests unitaires JS & Python
-- `__init__.py` / `__init__.js` : points d'entrée globaux pour import direct
-- `index.js` : point d'entrée principal JS (fusion core et samples)
-- `index.test.js` / `index.test.py` : tests d'intégration pour l'index
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-## Exemples d'utilisation
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-### Python
-```python
-from .core import ...
-from .samples import ...
-```
+---
 
-### JavaScript
-```js
-const mocks = require('./index');
-const mock = mocks.fixtures_mock;
-const sample = mocks.sample;
-```
-
-## Conformité
-- Respecte la logique métier 3D avancée
-- Compatible avec les outils de test et d'intégration continue
-- Prêt pour l'audit et la documentation automatique
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

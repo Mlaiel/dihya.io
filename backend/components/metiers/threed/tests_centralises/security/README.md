@@ -1,16 +1,22 @@
-# Security — Centralisation des tests ultra avancés
+# README – Module Threed
 
-Ce dossier contient tous les tests centralisés pour le module métier Security.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-**ATTENTION : Toute génération automatique de fichiers ou de contenu est désormais désactivée.**
-Aucune modification, création ou remplissage automatique ne sera effectué sans activation explicite par l’équipe projet.
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-- Gestion et enrichissement des tests désormais 100% manuels ou sur validation explicite.
-- Dernière mise à jour : 2025-06-08
-- Auteur : Dihya Engineering Team
-
-Chaque fichier de test est prêt pour CI/CD, audit, documentation et industrialisation.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-*Ce dossier est géré manuellement. Pour toute génération automatique, une activation explicite est requise.*
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

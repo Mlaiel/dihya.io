@@ -1,24 +1,22 @@
-# policy – Sécurité (Dihya)
+# README – Module Threed
 
-Ce dossier regroupe tous les modèles et utilitaires pour la gestion des politiques de sécurité du projet Dihya.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-- `model/` : Modèles de politique, schémas, validation (JS, Python)
-- `utils/` : Helpers, fonctions utilitaires, parsing, validation (JS, Python)
-- `samples/` : Exemples avancés d’utilisation (model, utils)
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-Chaque sous-dossier contient :
-- Les scripts principaux
-- Un README explicatif
-- Les fichiers d’initialisation (`__init__.js`, `__init__.py`)
-- Un fichier `.keep` pour le versionnement
-
-Le point d’entrée principal du module est `index.js`.
-
-## Bonnes pratiques
-- Ajouter tout nouveau module ou exemple dans le sous-dossier approprié.
-- Documenter chaque module et fournir des exemples d’utilisation.
-- Ajouter des tests unitaires pour chaque module.
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
 ---
 
-Structure validée par un ingénieur senior, clé en main, prête pour l’industrialisation.
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*

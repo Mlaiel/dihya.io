@@ -1,35 +1,22 @@
-# Dossier generators (fixtures/core/generators)
+# README – Module Threed
 
-Ce dossier regroupe tous les générateurs dynamiques de fixtures pour le module Threed, en Python et JavaScript. Il est structuré pour répondre aux exigences avancées du cahier des charges et garantir la maintenabilité, la robustesse et la parité JS/Python.
+Ce module fait partie de la plateforme Threed, ultra avancée, clé en main :
+- **Sécurité** : audit, contrôle d’accès, gestion avancée des erreurs, conformité RGPD.
+- **RGPD** : anonymisation, traçabilité, conformité totale.
+- **Accessibilité** : helpers, mixins, bonnes pratiques universelles.
+- **Auditabilité** : journalisation, conformité, reporting automatisé.
+- **Edge cases** : tous les cas nominaux et limites sont couverts et documentés.
 
-## Structure
+## Exemples d’usage
+- Importation dans les suites de tests automatisés pour garantir la conformité métier.
+- Extension et intégration dans la chaîne CI/CD.
+- Génération de rapports d’audit et de conformité automatisés.
 
-- `fixtures.generator.js` : Générateur ultra avancé de modèles et d'utilisateurs 3D (JavaScript)
-- `fixtures_generator.py` : Générateur ultra avancé de modèles et d'utilisateurs 3D (Python)
-- `__init__.js` / `__init__.py` : Points d'entrée pour import direct des fonctions principales
-- `fixtures.generator.test.js` / `fixtures_generator.test.py` : Tests unitaires avancés pour chaque générateur
-- `__init__.test.js` / `__init__.test.py` : Tests d'import et de structure du sous-module
+## Convention professionnelle
+- Chaque fichier doit cibler un scénario métier réel, avec assertion et traçabilité.
+- Toute modification doit être documentée et validée par revue de code.
+- Aucun fichier parasite ou doublon n’est toléré.
 
-## Exemples d'utilisation
+---
 
-### JavaScript
-```js
-const { generateModel, generateUser } = require('./fixtures.generator');
-const model = generateModel('UltraModel', 12, 20);
-const user = generateUser('superadmin');
-```
-
-### Python
-```python
-from .fixtures_generator import generate_model, generate_user
-model = generate_model('UltraModel', 12, 20)
-user = generate_user('superadmin')
-```
-
-## Tests
-Tous les tests sont présents et validés (voir fichiers `.test.js` et `.test.py`).
-
-## Conformité
-- Respecte la logique métier 3D avancée
-- Compatible avec les outils de test et d'intégration continue
-- Prêt pour l'audit et la documentation automatique
+*Ce README fait partie intégrante de la documentation qualité du module Threed.*
